@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+    <information>
+        <name>Bootstrap</name><!-- 스킨의 이름 -->
+        <version>1.0</version><!-- 스킨의 버전 -->
+        <description>
+            <![CDATA[ CSS Framework을 사용한 스킨입니다. ]]>
+        </description><!-- 스킨의 상세 설명 -->
+        <license>
+            <![CDATA[ MIT License ]]>
+        </license><!-- 스킨의 라이센스 -->
+    </information>
+    <author>
+        <name>DevAny</name><!-- 스킨 제작자 이름 -->
+        <homepage>https://www.devany.kr</homepage><!-- 스킨 제작자 홈페이지 -->
+        <email>devany.kr@gmail.com</email><!-- 스킨 제작자 이메일 주소 -->
+    </author>
+    <default>
+        <entriesOnPage>4</entriesOnPage><!-- 홈 화면 글 수 -->
+        <entriesOnList>4</entriesOnList><!-- 글 목록 글 수 -->
+        <recentEntries>5</recentEntries><!-- 사이드바의 최근글 표시 갯수 -->
+        <recentComments>4</recentComments><!-- 사이드바의 최근 댓글 표시 갯수 -->
+        <recentTrackbacks>4</recentTrackbacks><!-- 사이드바의 최근 트랙백 표시 갯수 -->
+        <itemsOnGuestbook>10</itemsOnGuestbook><!-- 한페이지에 표시될 방명록 갯수 -->
+        <tagsInCloud>30</tagsInCloud><!-- 사이드바에 표시될 태그 갯수 -->
+        <sortInCloud>3</sortInCloud><!-- 태그 클라우드 표현 방식 (1:인기도순, 2:이름순, 3:랜덤) -->
+        <expandComment>1</expandComment><!-- 댓글영역 표현 방식 (0:감추기, 1:펼치기) -->
+        <expandTrackback>1</expandTrackback><!-- 트랙백영역 표현 방식 (0:감추기, 1:펼치기) -->
+        <lengthOfRecentNotice>25</lengthOfRecentNotice><!-- 최근 공지 표현될 글자수 -->
+        <lengthOfRecentEntry>25</lengthOfRecentEntry><!-- 최근 글 표현될 글자수 -->
+        <lengthOfRecentComment>25</lengthOfRecentComment><!-- 최근 댓글에 표현될 글자수 -->
+        <lengthOfRecentTrackback>25</lengthOfRecentTrackback><!-- 최근 트랙백에 표현될 글자수 -->
+        <lengthOfLink>25</lengthOfLink><!-- 링크에 표현될 글자수 -->
+        <showListOnCategory>1</showListOnCategory><!-- 커버 미사용 홈에서 글 목록 표현(0:내용만, 1:목록만, 2: 내용+목록) -->
+        <showListOnArchive>1</showListOnArchive><!-- 홈 설정과 기본 설정에서 '목록 구성 요소' 항목의 노출 여부 결정 (0: 노출, 1: 노출 안 함) -->
+        <commentMessage>
+            <none>댓글이 없습니다.</none><!-- 댓글이 하나도 없을때 -->
+            <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt; 달렸습니다.</single><!-- 댓글이 하나 있을때 -->
+        </commentMessage>
+        <trackbackMessage>
+            <none>받은 트랙백이 없고</none><!-- 트랙백 표현 방법 -->
+            <single>트랙백이 &lt;span class="cnt"&gt;하나&lt;/span&gt;이고</single><!-- 트랙백이 하나도 없을때 -->
+        </trackbackMessage>
+        <tree><!-- 카테고리 -->
+            <color>000000</color><!-- 댓글이 하나 있을때 -->
+            <bgColor>ffffff</bgColor><!-- 카테고리 배경색 -->
+            <activeColor>000000</activeColor><!-- 선택시 글자색 -->
+            <activeBgColor>eeeeee</activeBgColor><!-- 선택시 배경색 -->
+            <labelLength>27</labelLength><!-- 표현될 카테고리 글자 수 -->
+            <showValue>0</showValue><!-- 카테고리 글 수 표현(0:숨김, 1:보임) -->
+        </tree>
+        <contentWidth>850</contentWidth><!-- 콘텐츠영역 가로 사이즈, 이 사이즈에 맞춰 에디터의 위지윅이 제대로 구현된다. -->
+        <liststyle>default</liststyle>
+    </default>
+    <liststyle>
+        <item>
+            <label>기본 섬네일</label>
+            <value>default</value>
+        </item>
+        <item>
+            <label>긴 섬네일</label>
+            <value>long </value>
+        </item>
+        <item>
+            <label>목록형</label>
+            <value>list </value>
+        </item>
+    </liststyle>
+    <cover>
+        <item>
+            <name>cover-thumbnail-wide</name>
+            <label><![CDATA[ 섬네일 리스트 ]]></label>
+            <description><![CDATA[섬네일을 길게 채운 목록 형태이며 마우스를 올리면 여러 방향에서 정보가 나타납니다.]]></description>
+        </item>
+        <item>
+            <name>cover-gallery1</name>
+            <label><![CDATA[ 섬네일 갤러리 1 ]]></label>
+            <description><![CDATA[갤러리 스타일이며 마우스를 올리면 위아래 방향에서 정보가 나타납니다.]]></description>
+        </item>
+        <item>
+            <name>cover-gallery2</name>
+            <label><![CDATA[ 섬네일 갤러리 2 ]]></label>
+            <description><![CDATA[갤러리 스타일이며 마우스를 올리면 정보가 나타나고 섬네일은 흐려집니다.]]></description>
+        </item>
+        <item>
+            <name>cover-grid</name>
+            <label><![CDATA[ 그리드 ]]></label>
+            <description>
+                <![CDATA[ 그리드 스타일이며 섬네일이 위에, 텍스트는 아래에 표시됩니다.]]>
+            </description>
+        </item>
+        <item>
+            <name>cover-thumbnail-right</name>
+            <label><![CDATA[ 텍스트+섬네일 목록 ]]></label>
+            <description><![CDATA[이미지가 우측에 작게 나타나는 텍스트 중심의 아이템입니다.]]></description>
+        </item>
+        <item>
+            <name>cover-list</name>
+            <label><![CDATA[ 텍스트 목록 ]]></label>
+            <description><![CDATA[제목과 본문으로 구성된 텍스트 중심의 기본 리스트입니다.]]></description>
+        </item>
+    </cover>
+    <variables>
+        <variablegroup name="공지 상자 설정">
+            <variable>
+                <name>global-notice-visible</name>
+                <label>
+                    <![CDATA[ 긴급공지 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 공지 상자를 ON / OFF 합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>global-notice-border-width</name>
+                <label>
+                    <![CDATA[ 공지 상자 테두리두께 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>1</default>
+                <description>
+                    <![CDATA[ thin, medium, thick, px, em, rem, cm, inherit, initial, revert, revert-layer, unset ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>global-notice-border-color</name>
+                <label>
+                    <![CDATA[ 공지 상자 테두리색 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#555</default>
+                <description>
+                    <![CDATA[ 공지 상자의 테두리 컬러를 설정합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>global-notice-bg-color</name>
+                <label>
+                    <![CDATA[ 공지 상자 배경색 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#F54</default>
+                <description>
+                    <![CDATA[ 공지 상자의 테두리 색상을 설정합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>global-notice-text</name>
+                <label>
+                    <![CDATA[ 공지 상자 내용 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ 공지 상자 내용을 입력합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>global-notice-font-size</name>
+                <label>
+                    <![CDATA[ 공지 상자 글자 크기 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>1em</default>
+                <description>
+                    <![CDATA[ 공지 상자의 글자 크기를 설정합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>global-notice-font-color</name>
+                <label>
+                    <![CDATA[ 공지 상자 글자 색상 ]]>
+                </label>
+                <type>COLOR</type>
+                <option />
+                <default>#FFF</default>
+                <description>
+                    <![CDATA[ 공지 상자 내용의 글자 색상을 설정합니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+
+        <variablegroup name="구글 애드센스 기본 정보">
+            <variable>
+                <name>google-adss-client</name>
+                <label>
+                    <![CDATA[ 애드센스 Client ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>ca-pub-7938029191014931</default>
+                <description>
+                    <![CDATA[ 애드센스의 클라이언트값을 입력하세요. 예: ca-pub-1234567890 ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="구글 애드센스 광고 단위">
+            <variable>
+                <name>adss-maintop-visible</name>
+                <label>
+                    <![CDATA[ Main 상단 수평 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ Main 상단에 수평으로 노출 되는 디스플레이 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-maintop-slot</name>
+                <label>
+                    <![CDATA[ Main 상단 수평 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>1076968242</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-articletop-visible</name>
+                <label>
+                    <![CDATA[ 글 상단 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 상단에 노출 되는 디스플레이 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-articletop-slot</name>
+                <label>
+                    <![CDATA[ 글 상단 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>1076968242</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-articleinfeed-visible</name>
+                <label>
+                    <![CDATA[ 글 본문 인피드 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 본문에 노출 되는 인피드 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-articleinfeed-slot</name>
+                <label>
+                    <![CDATA[ 글 본문 인피드 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>9325895524</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-listinfeed-visible</name>
+                <label>
+                    <![CDATA[ 글 목록 인피드 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 목록에 노출 되는 인피드 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-listinfeed-slot</name>
+                <label>
+                    <![CDATA[ 글 목록 인피드 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>6950851928</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-articlebottom-visible</name>
+                <label>
+                    <![CDATA[ 글 하단 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 하단에 노출 되는 디스플레이 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-articlebottom-slot</name>
+                <label>
+                    <![CDATA[ 글 하단 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>1076968242</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-multiplex-visible</name>
+                <label>
+                    <![CDATA[ 글 하단 멀티플렉스 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 글 하단에 노출 되는 멀티플렉스 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-multiplex-slot</name>
+                <label>
+                    <![CDATA[ 글 하단 멀티플렉스 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>9296570743</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-footer-visible</name>
+                <label>
+                    <![CDATA[ main 하단 광고 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ main 하단에 노출 되는 디스플레이 광고. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-footer-slot</name>
+                <label>
+                    <![CDATA[ main 하단 광고 Slot ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>1076968242</default>
+                <description>
+                    <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+
+        <variablegroup name="구글 검색 엔진 기본 정보">
+            <variable>
+                <name>gcse-searchbox-enabled</name>
+                <label>
+                    <![CDATA[ 구글 검색 엔진 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 헤더 검색을 구글 검색 엔진으로 변경합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>gcse-searchbox-code</name>
+                <label>
+                    <![CDATA[ 구글 검색 엔진 cx 값 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>278a96fd7cfb64878</default>
+                <description>
+                    <![CDATA[ cx 값을 입력합니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+        <variablegroup name="사이드바">
+            <variable>
+                <name>layout-aside</name>
+                <label><![CDATA[ 사이드바 위치 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>SELECT</type>
+                <option><![CDATA[[{"name":"layout-aside-left","label":"좌측","value":"layout-aside-left"}, {"name":"layout-aside-right","label":"우측","value":"layout-aside-right"}]]]></option>
+                <default>layout-aside-right</default>
+            </variable>
+        </variablegroup>
+        <variablegroup name="푸터">
+            <variable>
+                <name>order-link-1-title</name>
+                <label><![CDATA[ 외부링크1 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>order-link-1-url</name>
+                <label><![CDATA[ 외부링크1 주소 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>order-link-2-title</name>
+                <label><![CDATA[ 외부링크2 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>order-link-2-url</name>
+                <label><![CDATA[ 외부링크2 주소 ]]></label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description><![CDATA[]]></description>
+            </variable>
+            <variable>
+                <name>order-link-3-title</name>
+                <label><![CDATA[ 외부링크3 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>order-link-3-url</name>
+                <label><![CDATA[ 외부링크3 주소 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>order-link-4-title</name>
+                <label><![CDATA[ 외부링크4 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>order-link-4-url</name>
+                <label><![CDATA[ 외부링크4 주소 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>footer-text-1</name>
+                <label><![CDATA[ 푸터 문구 1 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default><![CDATA[ Designed by DevAny® ]]></default>
+            </variable>
+            <variable>
+                <name>footer-text-2</name>
+                <label><![CDATA[ 푸터 문구 2 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default><![CDATA[ © DevAny. ]]></default>
+            </variable>
+        </variablegroup>
+
+        <variablegroup name="레이아웃 설정">
+            <variable>
+                <name>default-thumbnail-img</name>
+                <label>
+                    <![CDATA[ 기본 섬네일 ]]>
+                </label>
+                <type>IMAGE</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ 기본 섬네일 이미지를 설정합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>page-loading-visible</name>
+                <label>
+                    <![CDATA[ 로딩 중 이미지 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[]]>
+                </description>
+            </variable>
+            <variable>
+                <name>page-loading-img</name>
+                <label>
+                    <![CDATA[ 로딩 중 이미지 ]]>
+                </label>
+                <type>IMAGE</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[]]>
+                </description>
+            </variable>
+            <variable>
+                <name>float-sideTools-visible</name>
+                <label>
+                    <![CDATA[ 사이드 도구모음 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option/>
+                <default>true</default>
+                <description>
+                    <![CDATA[]]>
+                </description>
+            </variable>
+            <variable>
+                <name>prognroll-enabled</name>
+                <label>
+                    <![CDATA[ 프로그레스바 활성화 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>true</default>
+                <description>
+                    <![CDATA[ 페이지 상단에 $.prognroll() 효과를 활성화합니다. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+
+        <variablegroup name="성능 설정">
+            <variable>
+                <name>img-lazyload-enabled</name>
+                <label>
+				    <![CDATA[ 이미지 불러오기 지연 설정 ]]>
+				</label>
+                <description></description>
+                <type>BOOL</type>
+                <option/>
+                <default>true</default>
+                <description>
+                    <![CDATA[]]>
+                </description>
+            </variable>
+        </variablegroup>
+
+        <variablegroup name="사용자 추가 태그">
+            <variable>
+                <name>head-customtag-enabled</name>
+                <label>
+                    <![CDATA[ <head>내 추가 태그 사용 ]]>
+                </label>
+                <type>BOOL</type>
+                <option />
+                <default>false</default>
+                <description>
+                    <![CDATA[ 사용자 추가 태그를 활성화 합니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>head-customtag-code1</name>
+                <label>
+                    <![CDATA[ <head>내 사용자 추가 태그 1 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ HTML 코드를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>head-customtag-code2</name>
+                <label>
+                    <![CDATA[ <head>내 사용자 추가 태그 2 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ HTML 코드를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>head-customtag-code3</name>
+                <label>
+                    <![CDATA[ <head>내 사용자 추가 태그 3 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description>
+                    <![CDATA[ HTML 코드를 입력하세요. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+
+        <variablegroup name="SEO 설정">
+            <variable>
+                <name>meta-author</name>
+                <label>
+                    <![CDATA[ SEO 저작자 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>Simulz</default>
+                <description>
+                    <![CDATA[ 저작자 필명을 입력하세요. 없으면 블로그 닉네임이 지정됩니다. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>meta-keyword</name>
+                <label>
+                    <![CDATA[ SEO 키워드 ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>Simulz, 리뷰, 알리, 게임, 전기, 전자, PCB, PLC, PHP, CAD, 3D, 자동차, 개발, Visual Studio, C#, HTML, JavaScript, CSS</default>
+                <description>
+                    <![CDATA[ SEO 설정 키워드를 입력하세요. ]]>
+                </description>
+            </variable>
+        </variablegroup>
+
+        <variable>
+            <name>logo-header</name>
+            <label><![CDATA[ 로고(프로필, 아이콘) ]]></label>
+            <description><![CDATA[]]></description>
+            <type>IMAGE</type>
+            <option />
+            <default></default>
+        </variable>
+        <variable>
+            <name>profile-img-visible</name>
+            <label><![CDATA[ 프로필 블로그 이미지 표시 ]]></label>
+            <description><![CDATA[]]></description>
+            <type>BOOL</type>
+            <option />
+            <default></default>
+        </variable>
+        <variable>
+            <name>profile-nickname2</name>
+            <label>
+                <![CDATA[ 프로필 닉네임 표시 ]]>
+            </label>
+            <type>STRING</type>
+            <option />
+            <default></default>
+            <description>
+                <![CDATA[]]>
+            </description>
+        </variable>
+        <variable>
+            <name>point-color</name>
+            <label><![CDATA[ 포인트 색상 ]]></label>
+            <description><![CDATA[]]></description>
+            <type>COLOR</type>
+            <option />
+            <default>#04beb8</default>
+        </variable>
+    </variables>
+</skin>

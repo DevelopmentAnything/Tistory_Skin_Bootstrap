@@ -1,0 +1,1441 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--SEO-->
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<meta name="author" content="<s_if_var_meta-author>[##_var_meta-author_##]</s_if_var_meta-author><s_not_var_meta-author>[##_blogger_##]</s_not_var_meta-author>">
+<meta name="generator" content="Tistory">
+<meta name="keywords" content="[##_var_metakeyword_##]" />
+<meta name="robots" content="index, follow">
+<s_if_var_head-customtag-enabled>
+<s_if_var_head-customtag-code1>[##_var_head-customtag-code1_##]</s_if_var_head-customtag-code1>
+<s_if_var_head-customtag-code2>[##_var_head-customtag-code2_##]</s_if_var_head-customtag-code2>
+<s_if_var_head-customtag-code3>[##_var_head-customtag-code3_##]</s_if_var_head-customtag-code3>
+</s_if_var_head-customtag-enabled>
+<title>[##_page_title_##]</title>
+<!-- 가능한 한 높은 위치에 -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PL3MBPC');</script>
+<!-- End Google Tag Manager -->
+<!-- 광고 차단 회복 -->
+<script async src="https://fundingchoicesmessages.google.com/i/pub-7938029191014931?ers=1" nonce="kALcSBdvbUnVVjfuzq0n5g"></script><script nonce="kALcSBdvbUnVVjfuzq0n5g">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<!-- 광고 차단 회복 끝 -->
+<!-- 광고 차단 오류 방지 메시지 -->
+<script>(function(){'use strict';function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}var ba="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
+    function ea(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var fa=ea(this);function ha(a,b){if(b)a:{var c=fa;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&null!=b&&ba(c,a,{configurable:!0,writable:!0,value:b})}}
+    var ia="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},l;if("function"==typeof Object.setPrototypeOf)l=Object.setPrototypeOf;else{var m;a:{var ja={a:!0},ka={};try{ka.__proto__=ja;m=ka.a;break a}catch(a){}m=!1}l=m?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var la=l;
+    function n(a,b){a.prototype=ia(b.prototype);a.prototype.constructor=a;if(la)la(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c];a.A=b.prototype}function ma(){for(var a=Number(this),b=[],c=a;c<arguments.length;c++)b[c-a]=arguments[c];return b}
+    var na="function"==typeof Object.assign?Object.assign:function(a,b){for(var c=1;c<arguments.length;c++){var d=arguments[c];if(d)for(var e in d)Object.prototype.hasOwnProperty.call(d,e)&&(a[e]=d[e])}return a};ha("Object.assign",function(a){return a||na});/*
+    
+        Copyright The Closure Library Authors.
+        SPDX-License-Identifier: Apache-2.0
+    */
+    var p=this||self;function q(a){return a};var t,u;a:{for(var oa=["CLOSURE_FLAGS"],v=p,x=0;x<oa.length;x++)if(v=v[oa[x]],null==v){u=null;break a}u=v}var pa=u&&u[610401301];t=null!=pa?pa:!1;var z,qa=p.navigator;z=qa?qa.userAgentData||null:null;function A(a){return t?z?z.brands.some(function(b){return(b=b.brand)&&-1!=b.indexOf(a)}):!1:!1}function B(a){var b;a:{if(b=p.navigator)if(b=b.userAgent)break a;b=""}return-1!=b.indexOf(a)};function C(){return t?!!z&&0<z.brands.length:!1}function D(){return C()?A("Chromium"):(B("Chrome")||B("CriOS"))&&!(C()?0:B("Edge"))||B("Silk")};var ra=C()?!1:B("Trident")||B("MSIE");!B("Android")||D();D();B("Safari")&&(D()||(C()?0:B("Coast"))||(C()?0:B("Opera"))||(C()?0:B("Edge"))||(C()?A("Microsoft Edge"):B("Edg/"))||C()&&A("Opera"));var sa={},E=null;var ta="undefined"!==typeof Uint8Array,ua=!ra&&"function"===typeof btoa;var F="function"===typeof Symbol&&"symbol"===typeof Symbol()?Symbol():void 0,G=F?function(a,b){a[F]|=b}:function(a,b){void 0!==a.g?a.g|=b:Object.defineProperties(a,{g:{value:b,configurable:!0,writable:!0,enumerable:!1}})};function va(a){var b=H(a);1!==(b&1)&&(Object.isFrozen(a)&&(a=Array.prototype.slice.call(a)),I(a,b|1))}
+    var H=F?function(a){return a[F]|0}:function(a){return a.g|0},J=F?function(a){return a[F]}:function(a){return a.g},I=F?function(a,b){a[F]=b}:function(a,b){void 0!==a.g?a.g=b:Object.defineProperties(a,{g:{value:b,configurable:!0,writable:!0,enumerable:!1}})};function wa(){var a=[];G(a,1);return a}function xa(a,b){I(b,(a|0)&-99)}function K(a,b){I(b,(a|34)&-73)}function L(a){a=a>>11&1023;return 0===a?536870912:a};var M={};function N(a){return null!==a&&"object"===typeof a&&!Array.isArray(a)&&a.constructor===Object}var O,ya=[];I(ya,39);O=Object.freeze(ya);var P;function Q(a,b){P=b;a=new a(b);P=void 0;return a}
+    function R(a,b,c){null==a&&(a=P);P=void 0;if(null==a){var d=96;c?(a=[c],d|=512):a=[];b&&(d=d&-2095105|(b&1023)<<11)}else{if(!Array.isArray(a))throw Error();d=H(a);if(d&64)return a;d|=64;if(c&&(d|=512,c!==a[0]))throw Error();a:{c=a;var e=c.length;if(e){var f=e-1,g=c[f];if(N(g)){d|=256;b=(d>>9&1)-1;e=f-b;1024<=e&&(za(c,b,g),e=1023);d=d&-2095105|(e&1023)<<11;break a}}b&&(g=(d>>9&1)-1,b=Math.max(b,e-g),1024<b&&(za(c,g,{}),d|=256,b=1023),d=d&-2095105|(b&1023)<<11)}}I(a,d);return a}
+    function za(a,b,c){for(var d=1023+b,e=a.length,f=d;f<e;f++){var g=a[f];null!=g&&g!==c&&(c[f-b]=g)}a.length=d+1;a[d]=c};function Aa(a){switch(typeof a){case "number":return isFinite(a)?a:String(a);case "boolean":return a?1:0;case "object":if(a&&!Array.isArray(a)&&ta&&null!=a&&a instanceof Uint8Array){if(ua){for(var b="",c=0,d=a.length-10240;c<d;)b+=String.fromCharCode.apply(null,a.subarray(c,c+=10240));b+=String.fromCharCode.apply(null,c?a.subarray(c):a);a=btoa(b)}else{void 0===b&&(b=0);if(!E){E={};c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split("");d=["+/=","+/","-_=","-_.","-_"];for(var e=
+    0;5>e;e++){var f=c.concat(d[e].split(""));sa[e]=f;for(var g=0;g<f.length;g++){var h=f[g];void 0===E[h]&&(E[h]=g)}}}b=sa[b];c=Array(Math.floor(a.length/3));d=b[64]||"";for(e=f=0;f<a.length-2;f+=3){var k=a[f],w=a[f+1];h=a[f+2];g=b[k>>2];k=b[(k&3)<<4|w>>4];w=b[(w&15)<<2|h>>6];h=b[h&63];c[e++]=g+k+w+h}g=0;h=d;switch(a.length-f){case 2:g=a[f+1],h=b[(g&15)<<2]||d;case 1:a=a[f],c[e]=b[a>>2]+b[(a&3)<<4|g>>4]+h+d}a=c.join("")}return a}}return a};function Ba(a,b,c){a=Array.prototype.slice.call(a);var d=a.length,e=b&256?a[d-1]:void 0;d+=e?-1:0;for(b=b&512?1:0;b<d;b++)a[b]=c(a[b]);if(e){b=a[b]={};for(var f in e)Object.prototype.hasOwnProperty.call(e,f)&&(b[f]=c(e[f]))}return a}function Da(a,b,c,d,e,f){if(null!=a){if(Array.isArray(a))a=e&&0==a.length&&H(a)&1?void 0:f&&H(a)&2?a:Ea(a,b,c,void 0!==d,e,f);else if(N(a)){var g={},h;for(h in a)Object.prototype.hasOwnProperty.call(a,h)&&(g[h]=Da(a[h],b,c,d,e,f));a=g}else a=b(a,d);return a}}
+    function Ea(a,b,c,d,e,f){var g=d||c?H(a):0;d=d?!!(g&32):void 0;a=Array.prototype.slice.call(a);for(var h=0;h<a.length;h++)a[h]=Da(a[h],b,c,d,e,f);c&&c(g,a);return a}function Fa(a){return a.s===M?a.toJSON():Aa(a)};function Ga(a,b,c){c=void 0===c?K:c;if(null!=a){if(ta&&a instanceof Uint8Array)return b?a:new Uint8Array(a);if(Array.isArray(a)){var d=H(a);if(d&2)return a;if(b&&!(d&64)&&(d&32||0===d))return I(a,d|34),a;a=Ea(a,Ga,d&4?K:c,!0,!1,!0);b=H(a);b&4&&b&2&&Object.freeze(a);return a}a.s===M&&(b=a.h,c=J(b),a=c&2?a:Q(a.constructor,Ha(b,c,!0)));return a}}function Ha(a,b,c){var d=c||b&2?K:xa,e=!!(b&32);a=Ba(a,b,function(f){return Ga(f,e,d)});G(a,32|(c?2:0));return a};function Ia(a,b){a=a.h;return Ja(a,J(a),b)}function Ja(a,b,c,d){if(-1===c)return null;if(c>=L(b)){if(b&256)return a[a.length-1][c]}else{var e=a.length;if(d&&b&256&&(d=a[e-1][c],null!=d))return d;b=c+((b>>9&1)-1);if(b<e)return a[b]}}function Ka(a,b,c,d,e){var f=L(b);if(c>=f||e){e=b;if(b&256)f=a[a.length-1];else{if(null==d)return;f=a[f+((b>>9&1)-1)]={};e|=256}f[c]=d;e&=-1025;e!==b&&I(a,e)}else a[c+((b>>9&1)-1)]=d,b&256&&(d=a[a.length-1],c in d&&delete d[c]),b&1024&&I(a,b&-1025)}
+    function La(a,b){var c=Ma;var d=void 0===d?!1:d;var e=a.h;var f=J(e),g=Ja(e,f,b,d);var h=!1;if(null==g||"object"!==typeof g||(h=Array.isArray(g))||g.s!==M)if(h){var k=h=H(g);0===k&&(k|=f&32);k|=f&2;k!==h&&I(g,k);c=new c(g)}else c=void 0;else c=g;c!==g&&null!=c&&Ka(e,f,b,c,d);e=c;if(null==e)return e;a=a.h;f=J(a);f&2||(g=e,c=g.h,h=J(c),g=h&2?Q(g.constructor,Ha(c,h,!1)):g,g!==e&&(e=g,Ka(a,f,b,e,d)));return e}function Na(a,b){a=Ia(a,b);return null==a||"string"===typeof a?a:void 0}
+    function Oa(a,b){a=Ia(a,b);return null!=a?a:0}function S(a,b){a=Na(a,b);return null!=a?a:""};function T(a,b,c){this.h=R(a,b,c)}T.prototype.toJSON=function(){var a=Ea(this.h,Fa,void 0,void 0,!1,!1);return Pa(this,a,!0)};T.prototype.s=M;T.prototype.toString=function(){return Pa(this,this.h,!1).toString()};
+    function Pa(a,b,c){var d=a.constructor.v,e=L(J(c?a.h:b)),f=!1;if(d){if(!c){b=Array.prototype.slice.call(b);var g;if(b.length&&N(g=b[b.length-1]))for(f=0;f<d.length;f++)if(d[f]>=e){Object.assign(b[b.length-1]={},g);break}f=!0}e=b;c=!c;g=J(a.h);a=L(g);g=(g>>9&1)-1;for(var h,k,w=0;w<d.length;w++)if(k=d[w],k<a){k+=g;var r=e[k];null==r?e[k]=c?O:wa():c&&r!==O&&va(r)}else h||(r=void 0,e.length&&N(r=e[e.length-1])?h=r:e.push(h={})),r=h[k],null==h[k]?h[k]=c?O:wa():c&&r!==O&&va(r)}d=b.length;if(!d)return b;
+    var Ca;if(N(h=b[d-1])){a:{var y=h;e={};c=!1;for(var ca in y)Object.prototype.hasOwnProperty.call(y,ca)&&(a=y[ca],Array.isArray(a)&&a!=a&&(c=!0),null!=a?e[ca]=a:c=!0);if(c){for(var rb in e){y=e;break a}y=null}}y!=h&&(Ca=!0);d--}for(;0<d;d--){h=b[d-1];if(null!=h)break;var cb=!0}if(!Ca&&!cb)return b;var da;f?da=b:da=Array.prototype.slice.call(b,0,d);b=da;f&&(b.length=d);y&&b.push(y);return b};function Qa(a){return function(b){if(null==b||""==b)b=new a;else{b=JSON.parse(b);if(!Array.isArray(b))throw Error(void 0);G(b,32);b=Q(a,b)}return b}};function Ra(a){this.h=R(a)}n(Ra,T);var Sa=Qa(Ra);var U;function V(a){this.g=a}V.prototype.toString=function(){return this.g+""};var Ta={};function Ua(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^Date.now()).toString(36)};function Va(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)}function Wa(a){this.g=a||p.document||document}Wa.prototype.appendChild=function(a,b){a.appendChild(b)};/*
+    
+        SPDX-License-Identifier: Apache-2.0
+    */
+    function Xa(a,b){a.src=b instanceof V&&b.constructor===V?b.g:"type_error:TrustedResourceUrl";var c,d;(c=(b=null==(d=(c=(a.ownerDocument&&a.ownerDocument.defaultView||window).document).querySelector)?void 0:d.call(c,"script[nonce]"))?b.nonce||b.getAttribute("nonce")||"":"")&&a.setAttribute("nonce",c)};function Ya(a){a=void 0===a?document:a;return a.createElement("script")};function Za(a,b,c,d,e,f){try{var g=a.g,h=Ya(g);h.async=!0;Xa(h,b);g.head.appendChild(h);h.addEventListener("load",function(){e();d&&g.head.removeChild(h)});h.addEventListener("error",function(){0<c?Za(a,b,c-1,d,e,f):(d&&g.head.removeChild(h),f())})}catch(k){f()}};var $a=p.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ab=p.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),bb=p.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu");function db(a,b,c){this.i=a;this.l=new Wa(this.i);this.g=null;this.j=[];this.m=!1;this.u=b;this.o=c}
+    function eb(a){if(a.i.body&&!a.m){var b=function(){fb(a);p.setTimeout(function(){return gb(a,3)},50)};Za(a.l,a.u,2,!0,function(){p[a.o]||b()},b);a.m=!0}}
+    function fb(a){for(var b=W(1,5),c=0;c<b;c++){var d=X(a);a.i.body.appendChild(d);a.j.push(d)}b=X(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=W(100,110).toString()+"%";b.style.zIndex=W(2147483544,2147483644).toString();b.style["background-color"]=hb(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=hb(0,10,0,10,0,10);b.style.display="flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=X(a);c.style.width=W(80,
+    85).toString()+"%";c.style.maxWidth=W(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=Va(a.l.g,"IMG");d.className=Ua();d.src=$a;d.alt="Warning icon";d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=X(a),f=X(a);f.style["font-weight"]="bold";f.textContent=ab;var g=X(a);g.textContent=bb;Y(a,e,f);Y(a,e,g);Y(a,c,d);Y(a,c,e);Y(a,b,c);a.g=b;a.i.body.appendChild(a.g);b=W(1,5);for(c=
+    0;c<b;c++)d=X(a),a.i.body.appendChild(d),a.j.push(d)}function Y(a,b,c){for(var d=W(1,5),e=0;e<d;e++){var f=X(a);b.appendChild(f)}b.appendChild(c);c=W(1,5);for(d=0;d<c;d++)e=X(a),b.appendChild(e)}function W(a,b){return Math.floor(a+Math.random()*(b-a))}function hb(a,b,c,d,e,f){return"rgb("+W(Math.max(a,0),Math.min(b,255)).toString()+","+W(Math.max(c,0),Math.min(d,255)).toString()+","+W(Math.max(e,0),Math.min(f,255)).toString()+")"}function X(a){a=Va(a.l.g,"DIV");a.className=Ua();return a}
+    function gb(a,b){0>=b||null!=a.g&&0!=a.g.offsetHeight&&0!=a.g.offsetWidth||(ib(a),fb(a),p.setTimeout(function(){return gb(a,b-1)},50))}
+    function ib(a){var b=a.j;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];if(c)b=c.call(b);else if("number"==typeof b.length)b={next:aa(b)};else throw Error(String(b)+" is not an iterable or ArrayLike");for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.j=[];(b=a.g)&&b.parentNode&&b.parentNode.removeChild(b);a.g=null};function jb(a,b,c,d,e){function f(k){document.body?g(document.body):0<k?p.setTimeout(function(){f(k-1)},e):b()}function g(k){k.appendChild(h);p.setTimeout(function(){h?(0!==h.offsetHeight&&0!==h.offsetWidth?b():a(),h.parentNode&&h.parentNode.removeChild(h)):a()},d)}var h=kb(c);f(3)}function kb(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};function Ma(a){this.h=R(a)}n(Ma,T);function lb(a){this.h=R(a)}n(lb,T);var mb=Qa(lb);function nb(a){a=Na(a,4)||"";if(void 0===U){var b=null;var c=p.trustedTypes;if(c&&c.createPolicy){try{b=c.createPolicy("goog#html",{createHTML:q,createScript:q,createScriptURL:q})}catch(d){p.console&&p.console.error(d.message)}U=b}else U=b}a=(b=U)?b.createScriptURL(a):a;return new V(a,Ta)};function ob(a,b){this.m=a;this.o=new Wa(a.document);this.g=b;this.j=S(this.g,1);this.u=nb(La(this.g,2));this.i=!1;b=nb(La(this.g,13));this.l=new db(a.document,b,S(this.g,12))}ob.prototype.start=function(){pb(this)};
+    function pb(a){qb(a);Za(a.o,a.u,3,!1,function(){a:{var b=a.j;var c=p.btoa(b);if(c=p[c]){try{var d=Sa(p.atob(c))}catch(e){b=!1;break a}b=b===Na(d,1)}else b=!1}b?Z(a,S(a.g,14)):(Z(a,S(a.g,8)),eb(a.l))},function(){jb(function(){Z(a,S(a.g,7));eb(a.l)},function(){return Z(a,S(a.g,6))},S(a.g,9),Oa(a.g,10),Oa(a.g,11))})}function Z(a,b){a.i||(a.i=!0,a=new a.m.XMLHttpRequest,a.open("GET",b,!0),a.send())}function qb(a){var b=p.btoa(a.j);a.m[b]&&Z(a,S(a.g,5))};(function(a,b){p[a]=function(){var c=ma.apply(0,arguments);p[a]=function(){};b.apply(null,c)}})("__h82AlnkH6D91__",function(a){"function"===typeof window.atob&&(new ob(window,mb(window.atob(a)))).start()});}).call(this);
+    
+    window.__h82AlnkH6D91__("WyJwdWItNzkzODAyOTE5MTAxNDkzMSIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi03OTM4MDI5MTkxMDE0OTMxIl0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hVSUxGSnVKSkF4dWFDMFgxSFdpUDlKMEJOQS14bG9zQnVtZWdZbm9pMUtjejFUcmc4M1RIOXhSNTRLTFo4dlllYkdMbi1hM3pZYUdkZ1Y2aXlBRW10R3BnXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFZBNVJUMThWeHJ6REExSndSQ1AwZHpJSUVOUXBCdGpTeVV4OXhvQmExaFg4LUMtMFAtYzQ5c3JkVTlzNXFieTVvQTlZYVdrZEZKNElTWXVLQ1ppN1kzOWdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFZMcl9tMTBpblNXM1BBZVJEM3FGbURZenB2WTY5SEF5TWFOYURPcUwzb1AxYUE3UnRteGJtSWNOdGZBU2JTQ29jVVlhY3NZdm55UFBGRzlNbWhnVk5tTFFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFdtMHlhYWJTQ29CWElIai00UjhHZzNlbHVJQm5tSEVOQkIycElleU1XTndXZXYyY3Z3cjJMWERZblM3UmJfazVEVTlETE1JUzdkUHBJUUx4REI0eWl2aEFcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUYzVNemd3TWpreE9URXdNVFE1TXpFXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi03OTM4MDI5MTkxMDE0OTMxLmpzP3VzcXBcdTAwM2RDQTQiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4VmZqcF94UGpFODJFY0cwNmNJZzA0OVFKSDlMTERMWm45ME1FTWh0dm9IUGp2TUNnQ29XbEd1eWY4eXRXUk1SOTA4YlJJd0ppNFh4Zkt5Y2hhRDZMeGE0Z1x1MDAzZFx1MDAzZCJd");</script>
+<!-- 광고 차단 오류 방지 메시지 끝-->
+
+<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+<!-- Tistory CSS -->
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./images/style.min.css" />
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Google Fonts -->
+<link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/>
+<!-- MDB -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" integrity="sha512-lw5ajyfDUd46e6Q5BVluGngRMWovYcl4LZqVMegyLA9i6wryScop6NdBSIsfFtU9jpAz5AOuGuTwYvYp+wUKjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js" integrity="sha512-kZKnID21//xaFiEISBXk6V1AdFCPOIpHhuEdBMprlAHdb0ICnvgSLsb89DAixlLJDuPyvNR+hN3lPvsFNn5XLg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Performance -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js" integrity="sha512-jNDtFf7qgU0eH/+Z42FG4fw3w7DM/9zbgNPe3wfJlCylVDTT3IgKW5r92Vy9IHa6U50vyMz5gRByIu4YIXFtaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<s_if_var_img-lazyload-enabled> 
+</s_if_var_img-lazyload-enabled>  
+<!-- 목차 스크립트 2023.08 -->
+<script src="https://tistory1.daumcdn.net/tistory/944811/skin/images/jquery.toc.min.js"></script>
+<!-- PrognRoll -->
+<script src="https://raw.githack.com/mburakerman/prognroll/master/src/prognroll.min.js"></script>
+<!-- Google Adsense 자동 광고 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7938029191014931"
+    crossorigin="anonymous"></script>
+<!-- End Google Adsense -->
+<!-- 구글 애드센스 승인 코드 -->
+<script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=[##_var_google-adss-client_##]" crossorigin="anonymous"></script>
+<!-- Style -->
+<style>
+    :root {
+        --ref-font-size: 16px; /* 기준 글꼴 크기 */
+        --point-color: <s_if_var_point-color>[##_var_point-color_##]</s_if_var_point-color>;
+        --main-font-color: #FFF;
+        --sub-bg-color: #E5E5E5;
+        --sub-header-color: #FFF;
+        --mouse-hover-color: #FF5544;
+        --prognroll-height: 5px;
+        --prognroll-bg-color: #60C5F1;
+        --article-link-color: #1D67B1;
+        --article-list-color: #888;
+        --article-list-link-color: #1D67B1;
+        --article-admin-color: #FF5544;
+        --tt-badge-color: #FFF;
+        --footer-link-color: #FF0;
+        --border-radius: 5px;
+        --article-font-size-m: 1em;
+        --article-font-size-pc: 1.1em;
+        --article-line-height-m: 1.5em;
+        --article-line-height-pc: 1.6em;
+        --article-letter-spacing: 0;
+        --article-first-letter-spacing: 10px;
+        --container-width: 1200px;
+        --tt-reply-bg-color: #FFF;
+        --tt-reply-line-color: #CCC;
+        --reply-bg-color: #EEE;
+        --reply-color: #333;
+        --reply-bg-color2: #555;
+        --reply-color2: #FFF;
+        --reply-icon-color: #555;
+        --reply-name-color: #404040;
+        --reply-date-color: #CCC;
+        --reply-report-color: #FF5544;
+        --more-reply-bg-color: #555;
+        --more-reply-color: #FFF;
+        --cover-grid-thumb-height: 120px;
+        --cover-gallery1-thumb-height: 250px;
+        --cover-gallery2-thumb-height: 250px;
+        --cover-thumbnail-wide-thumb-height: 250px;
+        --tt-article-reply-font-size: 13px;
+        --tt-article-reply-line-height: 1.3rem;
+        --tt-loading-image-size: 1;
+        --tt-loading-color: #fff;
+        --article-table-font-size: 14px;
+        --global-notice-border-width: <s_if_var_global-notice-border-width>[##_var_global-notice-border-width_##]</s_if_var_global-notice-border-width>;
+        --global-notice-border-color: <s_if_var_global-notice-border-color>[##_var_global-notice-border-color_##]</s_if_var_global-notice-border-color>;
+        --global-notice-bg-color: <s_if_var_global-notice-bg-color>[##_var_global-notice-bg-color_##]</s_if_var_global-notice-bg-color>;
+        --global-notice-font-size: <s_if_var_global-notice-font-size>[##_var_global-notice-font-size_##]</s_if_var_global-notice-font-size>;
+        --global-notice-font-color: <s_if_var_global-notice-font-color>[##_var_global-notice-font-color_##]</s_if_var_global-notice-font-color>;
+        --tt-sidebar-word-line-clamp: 1;
+        --tt-article-bold-color: #222;
+        --tt-article-bold-bg-color: #C0FFEE;
+        --tt-article-toc-color: #676767;
+        --tt-article-toc-hover-color: #f00;
+        --tt-article-toc-bg: linear-gradient(to right, #FFF76617, #ffffff);
+        --float-sideTool-rect-size: 35px;
+        --float-sideTool-opacity: .75; /* 투명도 */
+        --float-sideTool-transform-scale: 1; /* 크기 배율 */
+   }
+</style>
+<script>
+initMDB({ Collapse });
+</script>
+</head>
+
+<body id="[##_body_id_##]" class="p-0 m-0 border-0 
+    <s_if_var_layout-aside>[##_var_layout-aside_##]</s_if_var_layout-aside>
+    promotion-mobile-hide">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL3MBPC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<span class="prognroll-bar"></span>
+<!-- 로딩 중 시작 -->
+<s_if_var_page-loading-visible>
+<div id="loading" class="position-absolute justify-content-center ">
+    <div class="spinner-border text-success" role="status">
+        <!-- <img class="loading-image" src="<s_if_var_page-loading-img>[##_var_page-loading-img_##]</s_if_var_page-loading-img><s_not_var_page-loading-img>./images/loading.gif</s_not_var_page-loading-img>" alt="loading"/> -->
+    </div>
+</div>
+</s_if_var_page-loading-visible>
+<!-- 로딩 중 끝 -->
+
+<s_t3>
+<!-- 헤더 시작 -->
+<header id="header" class="container-fluid p-0 mb-1 border-bottom sticky-top">
+    <nav class="navbar nabvar-light navbar-expand-lg ">
+        <div class="container-fluid">
+            <s_if_var_logo-header>
+                <img src="[##_var_logo-header_##]" alt="[##_title_##]" height="24px">
+            </s_if_var_logo-header>
+            <s_not_var_logo-header>
+                <a href="[##_blog_link_##]" class="navbar-brand">[##_title_##]</a>
+            </s_not_var_logo-header>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="[##_blog_link_##]" class="nav-link link-body-emphasis"><i class="fa-solid fa-house-chimney"></i> 홈</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/category" title="전체글" class="nav-link link-body-emphasis"><i class="fa-solid fa-rectangle-list"></i> 목록</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="[##_guestbook_link_##]" title="방명록" class="nav-link link-body-emphasis"><i class="fa-solid fa-user-pen"></i> 방명록</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="[##_taglog_link_##]" class="nav-link link-body-emphasis"><i class="fa-solid fa-tag"></i> 태그</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle link-body-emphasis" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false">즐겨찾기</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://simulz.kr/wiki/" class="nav-link link-body-emphasis"><i class="fa-solid fa-book-atlas"></i> Wiki</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-nav ms-auto" role="search">
+                    <s_search>
+                        <div class="input-group rounded">
+                            <s_if_var_gcse-searchbox-enabled>
+                            <script async src="https://cse.google.com/cse.js?cx=[##_var_gcse-searchbox-code_##]">
+                            </script>
+                            <div class="gcse-searchbox-only"></div>
+                            </s_if_var_gcse-searchbox-enabled>
+                            <s_not_var_gcse-searchbox-enabled>
+                            <input id="[##_search_name_##]" type="search" name="[##_search_name_##]" value="[##_search_text_##]" class="form-control rounded" placeholder="검색" aria-label="검색" aria-describedby="search-addon" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" />
+                            <button id="submit" type="submit" class="btn btn-outline-primary" data-mdb-ripple-color="dark" onclick="[##_search_onclick_submit_##]"><i class="fas fa-search"></i></button>
+                            </s_not_var_gcse-searchbox-enabled>
+                        </div>
+                    </s_search>
+                </div>
+                <div class="navbar-nav me-auto">
+                    <ul id="menu-admin" class="nav justify-content-center">
+                        <s_if_var_global-notice-visible>
+                        <li class="nav-item ms-2 dropdown">
+                            <a
+                            class="nav-link dropdown-toggle hidden-arrow"
+                            href="#"
+                            id="navbarDropdownMenu-notice"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            data-mdb-dropdown-init
+                            data-mdb-ripple-init
+                            aria-expanded="false"
+                            >
+                            <i class="fas fa-bell"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                            </a>
+                            <div id="menu-notice" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenu-notice">
+                                <div class="p-1">
+                                    [##_var_global-notice-text_##]
+                                </div>
+                            </div>
+                        </li>
+                        </s_if_var_global-notice-visible>
+                        <li class="nav-item ms-2"><a href="[##_owner_url_##]/entry/post " class="nav-link link-body-emphasis" title="글쓰기"><i
+                                    class="fa-solid fa-pencil"></i></a></li>
+                        <li class="nav-item ms-2"><a href="[##_owner_url_##]" class="nav-link link-body-emphasis" title="관리"><i
+                                    class="fa-solid fa-gear"></i></a></li>
+                        <li class="nav-item login ms-2"><a href="#" class="nav-link link-body-emphasis"><i class="fas fa-lock" title="로그인"></i></a></li>
+                        <li class="nav-item logout ms-2"><a href="#" class="nav-link link-body-emphasis"><i class="fas fa-lock-open" title="로그아웃"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- 메인 시작 -->
+<main id="main" class="container-xl">
+    <!--T1 메인 상단 시작 -->
+    <div class="row flex-nowrap">
+        <!--T2 섹션 공지 시작 -->
+        <s_if_var_global-notice-visible>
+        <section id="global-notice" class="container-fluid mt-1">
+            <div class="text-lg-center p-2">
+                [##_var_global-notice-text_##]
+            </div>
+        </section>
+        </s_if_var_global-notice-visible>
+        <!--T2 섹션 공지 끝 -->
+    </div>
+    <!--T2 섹션 메인 상단 애드센스 시작 -->
+    <s_if_var_adss-maintop-visible>
+    <div class="row flex-nowrap">
+        <div id="adss-maintop" class="d-none d-lg-block container-fluid mt-lg-1 adss-horizontal">
+            <!-- 디스플레이 수평 -->
+            <ins class="adsbygoogle adss-horizontal"
+                    style="display:block"
+                    data-ad-client="[##_var_google-adss-client_##]"
+                    data-ad-slot="[##_var_adss-adss-maintop-slot_##]"
+                    data-ad-format="horizontal"
+                    data-full-width-responsive="true"></ins>
+            <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    </s_if_var_adss-maintop-visible>
+    <!--T2 섹션 메인 상단 애드센스 끝 -->
+    <!--T1 메인 상단 끝 -->
+    <!--T1 메인 본문 시작 -->
+    <div class="row flex-nowrap justify-content-lg-evenly ">
+        <!--T2 컨텐트 시작 -->
+        <div class="col-lg-8 mt-1 ms-lg-2">
+            <!--티스토리 상단 광고-->
+            [##_revenue_list_upper_##]
+            <s_cover_group>
+            <!--T3 섹션 커버 시작 -->
+            <section id="cover">
+                <s_cover_rep>
+                <!--T4 섬네일 리스트 커버 -->
+                <s_cover name="cover-thumbnail-wide">
+                <div class="container-fluid cover-thumbnail-wide-wrap ttCoverElement">
+                    <div class="row bg-dark bg-gradient text-white py-2">
+                        <div class="col">
+                            [##_cover_title_##]
+                        </div>
+                    </div>
+                    <div class="row vstack gap-1">
+                        <s_cover_item>
+                        <div class="cover-thumbnail-wide-item rounded" onclick="location.href='[##_cover_item_url_##]';">
+                            <!-- 컨텐츠 이미지가 있는 경우 -->
+                            <s_cover_item_thumbnail>
+                            <div class="thumnailWrap">
+                                <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
+                            </div>
+                            </s_cover_item_thumbnail>
+                            <div class="thumnailWrap display-none">
+                                <div class="thumnail" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img>);"></div>
+                            </div>
+                            <div class="cover-thumbnail-wide-item-over">
+                                <div class="cover-thumbnail-wide-item-over-title">
+                                    <h1 class="title">[##_cover_item_title_##]</h1>
+                                </div>
+                                <div class="cover-thumbnail-wide-item-over-summary">
+                                    <div class="summary">[##_cover_item_summary_##]</div>
+                                </div>
+                                <!-- 컨텐츠가 글인 경우 -->
+                                <s_cover_item_article_info>
+                                <div class="cover-thumbnail-wide-item-over-category">
+                                    <div class="category"><i class="fa-solid fa-folder-tree"></i> [##_cover_item_category_##]</div>
+                                </div>
+                                <div class="cover-thumbnail-wide-item-over-date">
+                                    <div class="date"><i class="far fa-calendar"></i> [##_cover_item_simple_date_##]</div>
+                                </div>
+                                </s_cover_item_article_info>
+                                <!-- 컨텐츠가 글이 아닌 경우 -->
+                                <s_cover_item_not_article_info>
+                                <div class="cover-thumbnail-wide-item-over-summary">
+                                    <div class="summary">[##_cover_item_summary_##]</div>
+                                </div>
+                                <div class="cover-thumbnail-wide-item-over-url">
+                                    <div class="url"><i class="fas fa-link"></i> [##_cover_item_url_##]</div>
+                                </div>
+                                </s_cover_item_not_article_info>
+                            </div>
+                        </div>
+                        </s_cover_item>
+
+                        <s_if_var_adss-listinfeed-visible>
+                        <div class="cover-list-infeedAdsense">
+                            <!-- 인피드 광고 -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-client="[##_var_google-adss-client_##]"
+                                data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </s_if_var_adss-listinfeed-visible>
+                    </div>
+                </div>
+                <hr class="hr" />
+                </s_cover>
+
+                <!--T4 섬네일 갤러리 1 커버 -->
+                <s_cover name="cover-gallery1">
+                <div class="container-fluid cover-gallery1-wrap ttCoverElement">
+                    <div class="row bg-dark bg-gradient text-white py-2">
+                        <div class="col">
+                            [##_cover_title_##]
+                        </div>
+                    </div>
+                    <div class="row vstack gap-1">
+                        <s_cover_item>
+                        <div class="cover-gallery1-wrap-inner" onclick="location.href='[##_cover_item_url_##]';" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                            <s_cover_item_thumbnail>
+                            <div class="thumnailWrap">
+                                <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
+                            </div>
+                            </s_cover_item_thumbnail>
+                            <div class="cover-gallery1-wrap-inner-over">
+                                <div class="cover-gallery1-wrap-inner-over-top">
+                                    <h1 class="title">[##_cover_item_title_##]</h1>
+                                </div>
+                                <div class="cover-gallery1-wrap-inner-over-bottom">
+                                    <s_cover_item_article_info>
+                                    <div class="category"><i class="fa-solid fa-folder-tree"></i> [##_cover_item_category_##]</div>
+                                    <div class="date"><i class="far fa-calendar"></i> [##_cover_item_simple_date_##]</div>
+                                    </s_cover_item_article_info>
+                                    <s_cover_item_not_article_info>
+                                    <div class="summary">[##_cover_item_summary_##]</div>
+                                    <div class="url"><i class="fas fa-link"></i> [##_cover_item_url_##]</div>
+                                    </s_cover_item_not_article_info>
+                                </div>
+                            </div>
+                        </div>
+                        </s_cover_item>
+
+                        <s_if_var_adss-listinfeed-visible>
+                        <div class="cover-list-infeedAdsense">
+                            <!-- 인피드 광고 -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-client="[##_var_google-adss-client_##]"
+                                data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </s_if_var_adss-listinfeed-visible>    
+                    </div>
+                </div>
+                <hr class="hr" />
+                </s_cover>
+
+                <!--T4 섬네일 갤러리 2 커버 -->
+                <s_cover name="cover-gallery2">
+                <div class="container-fluid cover-gallery2-wrap ttCoverElement">
+                    <div class="row bg-dark bg-gradient text-white py-2">
+                        <div class="col">
+                            [##_cover_title_##]
+                        </div>
+                    </div>
+                    <div class="row vstack gap-1">
+                        <s_cover_item>
+                        <div class="cover-gallery2-wrap-inner" onclick="location.href='[##_cover_item_url_##]';" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                            <s_cover_item_thumbnail>
+                            <div class="thumnailWrap">
+                                <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
+                            </div>
+                            </s_cover_item_thumbnail>
+                            <div class="cover-gallery2-wrap-inner-over">
+                                <div class="cover-gallery2-wrap-inner-over-title">
+                                    <div class="cover-gallery2-wrap-inner-over-top">
+                                        <h1 class="title">[##_cover_item_title_##]</h1>
+                                    </div>
+                                    <div class="cover-gallery2-wrap-inner-over-bottom">
+                                        <s_cover_item_article_info>
+                                        <div class="category"><i class="fa-solid fa-folder-tree"></i> [##_cover_item_category_##]</div>
+                                        <div class="date"><i class="far fa-calendar"></i> [##_cover_item_simple_date_##]</div>
+                                        </s_cover_item_article_info>
+                                        <s_cover_item_not_article_info>
+                                        <div class="summary">[##_cover_item_summary_##]</div>
+                                        <div class="url"><i class="fas fa-link"></i> [##_cover_item_url_##]</div>
+                                        </s_cover_item_not_article_info>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </s_cover_item>
+
+                        <s_if_var_adss-listinfeed-visible>
+                        <div class="cover-list-infeedAdsense">
+                            <!-- 인피드 광고 -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-client="[##_var_google-adss-client_##]"
+                                data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </s_if_var_adss-listinfeed-visible>    
+                    </div>
+                </div>
+                <hr class="hr" />
+                </s_cover>
+
+                <!--T4 그리드 커버 -->
+                <s_cover name="cover-grid">
+                <div class="container-fluid cover-grid-wrap ttCoverElement">
+                    <div class="row bg-dark bg-gradient text-white py-2">
+                        <div class="col">
+                            [##_cover_title_##]
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <s_cover_item>
+                        <div class="inner" onclick="location.href='[##_cover_item_url_##]';">
+                            <div class="inner-top" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                                <s_cover_item_thumbnail>
+                                <div class="thumnailWrap">
+                                    <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
+                                </div>
+                                </s_cover_item_thumbnail>
+                            </div>
+                            <div class="inner-bottom">
+                                <div class="inner-bottom-top">
+                                    <h1 class="title">[##_cover_item_title_##]</h1>
+                                    <div class="summary">[##_cover_item_summary_##]</div>
+                                </div>
+                                <div class="inner-bottom-bottom">
+                                    <s_cover_item_article_info>
+                                    <div class="category"><i class="fa-solid fa-folder-tree"></i> [##_cover_item_category_##]</div>
+                                    <div class="date"><i class="far fa-calendar"></i> [##_cover_item_simple_date_##]</div>
+                                    </s_cover_item_article_info>
+                                    <s_cover_item_not_article_info>
+                                    <div class="url"><i class="fas fa-link"></i> [##_cover_item_url_##]</div>
+                                    </s_cover_item_not_article_info>
+                                </div>
+                            </div>
+                        </div>
+                        </s_cover_item>
+
+                        <s_if_var_adss-listinfeed-visible>
+                        <div class="cover-list-infeedAdsense">
+                            <!-- 인피드 광고 -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-client="[##_var_google-adss-client_##]"
+                                data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </s_if_var_adss-listinfeed-visible>
+                    </div>
+                </div>
+                <hr class="hr" />
+                </s_cover>
+
+                <!--T4 텍스트+섬네일 목록 커버 -->
+                <s_cover name='cover-thumbnail-right'>
+                <div class="container-fluid cover-list-wrap ttCoverElement">
+                    <div class="row bg-dark bg-gradient text-white py-2">
+                        <div class="col">
+                            [##_cover_title_##]
+                        </div>
+                    </div>
+                    <div class="row vstack gap-1">
+                        <s_cover_item>
+                        <div class="inner rounded" onclick="location.href='[##_cover_item_url_##]';">
+                            <div class="inner-left" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                                <!-- 컨텐츠 이미지가 있는 경우 -->
+                                <s_cover_item_thumbnail>
+                                <div class="thumnailWrap">
+                                    <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
+                                </div>
+                                </s_cover_item_thumbnail>
+                            </div>
+                            <div class="inner-right">
+                                <div class="inner-right-top">
+                                    <h1 class="title">[##_cover_item_title_##]</h1>
+                                    <div class="summary">[##_cover_item_summary_##]</div>
+                                </div>
+                                <div class="inner-right-bottom">
+                                    <s_cover_item_article_info>
+                                    <div class="category"><i class="fa-solid fa-folder-tree"></i>[##_cover_item_category_##]</div>
+                                    <div class="date"><i class="far fa-calendar"></i>[##_cover_item_simple_date_##]</div>
+                                    </s_cover_item_article_info>
+                                    <s_cover_item_not_article_info>
+                                    <div class="url"><i class="fas fa-link"></i>[##_cover_item_url_##]</div>
+                                    </s_cover_item_not_article_info>
+                                </div>
+                            </div>
+                        </div>
+                        </s_cover_item>
+
+                        <s_if_var_adss-listinfeed-visible>
+                        <div class="cover-list-infeedAdsense">
+                            <!-- 인피드 광고 -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-client="[##_var_google-adss-client_##]"
+                                data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </s_if_var_adss-listinfeed-visible>
+                    </div>
+                </div>
+                <hr class="hr" />
+                </s_cover>
+
+                <!--T4 텍스트 목록 커버 -->
+                <s_cover name="cover-list">
+                <div class="container-fluid ttCoverElement">
+                    <div class="row bg-dark bg-gradient text-white py-2">
+                        <div class="col">
+                            [##_cover_title_##]
+                        </div>
+                    </div>
+                    <div class="row vstack gap-1">
+                        <s_cover_item>
+                        <div class="hstack gap-3 border py-2">
+                            <div class="">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a>
+                            </div>
+                            <div class="vr ms-auto"></div>
+                            <div class="">
+                                <div class="">
+                                    <s_cover_item_article_info>
+                                    <div class="date"><i class="far fa-calendar"></i> [##_cover_item_simple_date_##]</div>
+                                    </s_cover_item_article_info>
+                                    <s_cover_item_not_article_info>
+                                    <div class="url"><i class="fas fa-link"></i> [##_cover_item_url_##]</div>
+                                    </s_cover_item_not_article_info>
+                                </div>
+                            </div>
+                        </div>
+                        </s_cover_item>
+
+                        <s_if_var_adss-listinfeed-visible>
+                        <div class="cover-list-infeedAdsense">
+                            <!-- 인피드 광고 -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-client="[##_var_google-adss-client_##]"
+                                data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </s_if_var_adss-listinfeed-visible>
+                    </div>
+                </div>
+                <hr class="hr" />
+                </s_cover>
+                </s_cover_rep>
+            </section>
+            <!--T3 섹션 커버 끝 -->
+            </s_cover_group>
+
+            <s_page_rep>
+            <!--T3 페이지 시작 -->
+            <section id="page">
+                <div class="text-center">
+                    <h1 class="article-title">[##_article_rep_title_##]</h1>
+                    <span class="date">[##_article_rep_date_##]</span>
+                </div>
+                <article class="entry-content">[##_article_rep_desc_##]</article>
+            </section>
+            <!--T3 페이지 끝 -->
+            </s_page_rep>
+
+            <s_notice_rep>
+            <!--T3 공지 시작 -->
+            <section id="notice">
+                <div class="permalink_article">
+                    <h1 class="article-title">[##_notice_rep_title_##]</h1>
+                    <span class="date"><i class="fa-regular fa-clock"></i> [##_notice_rep_date_##]</span>
+                    <s_ad_div>
+                        <a href="[##_s_ad_m_link_##]">수정</a>
+                        <!-- <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> -->
+                    </s_ad_div>
+                </div>
+            </section>
+
+            <article class="entry-content">[##_notice_rep_desc_##]</article>
+            <!--T3 공지 끝 -->
+            </s_notice_rep>
+
+            <s_list>
+            <!--T3 목록 시작: 카테고리, 검색, 태그 -->
+            <section id="list">
+                <!--구글검색엔진-->
+                <script async src="https://cse.google.com/cse.js?cx=2f13b4ef829ce2341">
+                </script>
+                <div class="gcse-searchresults-only"></div>
+
+                <div class="permalink_article searchList [##_list_style_##]">
+                    <h1 class="article-title">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">[##_list_count_##]</span>
+                        <span>[##_list_conform_##]</span>
+                    </h1>
+                </div>
+                <s_list_empty>
+                <article class="entry-content not-found">
+                    <ul>
+                        <li>입력하신 단어의 철자가 정확한지 확인해 보세요.</li>
+                        <li>검색어의 단어 수를 줄이거나, 보다 일반적인 단어로 검색해 보세요.</li>
+                        <li>두 단어 이상의 키워드로 검색 하신 경우, 정확하게 띄어쓰기를 한 후 검색해 보세요.</li>
+                    </ul>
+                    <ul class="tag">
+                        <li>선택하신 태그에 해당하는 글이 없습니다.</li>
+                        <li>다른 태그를 선택하시거나, 검색 기능을 활용해 보세요.</li>
+                    </ul>
+                    <ul class="category">
+                        <li>선택하신 카테고리에 해당하는 글이 없습니다.</li>
+                        <li>다른 카테고리를 선택하시거나, 검색 기능을 활용해 보세요.</li>
+                    </ul>
+                    <ul class="archive">
+                        <li>선택하신 기간에 등록된 글이 없습니다.</li>
+                    </ul>
+                </article>
+                </s_list_empty>
+            </section>
+            <!--T3 목록 끝 -->
+            </s_list>
+
+            <s_article_protected>
+            <!--T3 보호 인덱스 시작 -->
+            <s_index_article_rep>
+            <div class="index-list-content">
+                <div class="index-list-content-inner">
+                    <a href="[##_article_rep_link_##]" aria-label="보호글" class="index-inner-left">
+                        <div class="tt-index-secret" ><i class="fa-solid fa-key fa-2xl"></i></div>
+                    </a>
+                    <div class="index-inner-right">
+                        <a href="[##_article_rep_link_##]" class="link_post">
+                            <h1 class="article-title tit_post">[##_article_rep_title_##]</h1>
+                            <p class="txt_post">보호되어 있는 글 입니다.</p>
+                        </a>
+                        <div class="detail_info">
+                            <span class="txt_bar">
+                                <i class="far fa-calendar"></i>[##_article_rep_simple_date_##]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </s_index_article_rep>
+            <!--T3 보호 인덱스 끝 -->
+            <!--T3 보호 글 시작 -->
+            <s_permalink_article_rep>
+            <section id="permalink_article" class="permalink_article">
+                <!-- 제목 위 브레드크럼 시작. s_article_rep 동기화 -->
+                <nav aria-label="breadcrumb">
+                    <ol vocab="[##_blog_link_##]" typeof="BreadcrumbList" class="breadcrumb">
+                        <li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                            <a property="item" typeof="WebPage" href="[##_blog_link_##]"><span property="name">Home</span></a>
+                            <meta property="position" content="1">
+                        </li>
+                        <li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                            <a property="item" typeof="WebPage" href="[##_article_rep_category_link_##]"><span property="name">[##_article_rep_category_##]</a></span>
+                            <meta property="position" content="2">
+                        </li>
+                        <!-- <li property="itemListElement" typeof="ListItem" class="breadcrumb-item active" aria-current="page">
+                            <span property="name">[##_article_rep_title_##]</span>
+                            <meta property="position" content="3">
+                        </li> -->
+                    </ol>
+                </nav>
+                <!-- 제목 위 브레드크럼 끝 -->
+
+                <h1 class="article-title">[##_article_rep_title_##]</h1>
+                <span class="meta">
+                    <span class="author"><i class="fa-solid fa-feather"></i> [##_article_rep_author_##]</span>
+                    <span class="date"><i class="fa-regular fa-clock"></i> [##_article_rep_simple_date_##]</span>
+                    <s_ad_div>
+                    <a href="[##_s_ad_m_link_##]">수정</a>
+                    <!-- <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> -->
+                    </s_ad_div>
+                </span>
+            </section>
+
+            <article class="entry-content">
+                <form class="protected_form " onsubmit="{reloadEntry(14);return false;}">
+                    <h2>보호되어 있는 글입니다.</h2>
+                    <p>내용을 보시려면 비밀번호를 입력하세요.</p>
+                    <div class="">
+                        <input type="password" id="entry14password" name="entry14password" value=""
+                            placeholder="비밀번호" class="form-control">
+                        <label class="form-label" for="entry14password">비밀번호</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">확인</button>
+                </form>
+            </article>
+            </s_permalink_article_rep>
+            <!--T3 보호 글 끝 -->
+            </s_article_protected>
+
+            <s_article_rep>
+                <!--T4 인덱스 시작 -->    
+                <s_index_article_rep>
+                <div class="index-list-content">
+                    <div class="index-list-content-inner">
+                        <a
+                            href="[##_article_rep_link_##]"
+                            aria-label="[##_article_rep_title_##]"
+                            class="index-inner-left"
+                            style="background-image: url(<s_if_var_tt-thumbnail>[##_var_tt-thumbnail_##]</s_if_var_tt-thumbnail><s_not_var_tt-thumbnail>./images/ch.gif</s_not_var_tt-thumbnail>);">
+                            <s_article_rep_thumbnail>
+                                <div
+                                    class="tt-index-img"
+                                    style="background-image: url('[##_article_rep_thumbnail_url_##]');"></div>
+                            </s_article_rep_thumbnail>
+                        </a>
+                        <div class="index-inner-right">
+                            <a href="[##_article_rep_link_##]" class="link_post">
+                                <h1 class="tit_post article-title">[##_article_rep_title_##]</h1>
+                                <p class="txt_post">[##_article_rep_summary_##]</p>
+                            </a>
+                            <div class="detail_info">
+                                <a href="[##_article_rep_category_link_##]" class="link_cate">
+                                    <i class="fa-solid fa-folder-tree"></i>[##_article_rep_category_##]</a>
+                                <span class="txt_bar">
+                                    <i class="far fa-calendar"></i>[##_article_rep_date_##]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <s_if_var_adss-listinfeed-visible>
+                <div class="adss-listinfeed">
+                    <!-- 인피드 광고 -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-format="fluid"
+                        data-ad-layout="image-side"
+                        data-ad-layout-key="-i1-7+2h-1m-4u"
+                        data-ad-client="[##_var_google-adss-client_##]"
+                        data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                </s_if_var_adss-listinfeed-visible>    
+                <!--T4 인덱스 끝 -->
+                </s_index_article_rep>
+        
+                <!--T3 글 시작 -->
+                <s_permalink_article_rep>
+                <section id="section-article">
+                    <div id="permalink_article" class="permalink_article">
+                        <div class="inner">
+                            <!-- 제목 위 브레드크럼 시작 -->
+                            <nav aria-label="breadcrumb">
+                                <ol vocab="[##_blog_link_##]" typeof="BreadcrumbList" class="breadcrumb">
+                                    <li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                                        <a property="item" typeof="WebPage" href="[##_blog_link_##]"><span property="name">Home</span></a>
+                                        <meta property="position" content="1">
+                                    </li>
+                                    <li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                                        <a property="item" typeof="WebPage" href="[##_article_rep_category_link_##]"><span property="name">[##_article_rep_category_##]</a></span>
+                                        <meta property="position" content="2">
+                                    </li>
+                                    <!-- <li property="itemListElement" typeof="ListItem" class="breadcrumb-item active" aria-current="page">
+                                        <span property="name">[##_article_rep_title_##]</span>
+                                        <meta property="position" content="3">
+                                    </li> -->
+                                </ol>
+                            </nav>
+                            <!-- 제목 위 브레드크럼 끝 -->
+        
+                            <h1 class="article-title">[##_article_rep_title_##]</h1>
+                            <span class="meta">
+                                <span class="author"><i class="fa-solid fa-feather"></i> [##_article_rep_author_##]</span>
+                                <span class="date"><i class="fa-regular fa-clock"></i> [##_article_rep_simple_date_##]</span>
+                                <s_ad_div>
+                                    <a href="[##_s_ad_m_link_##]">수정</a>
+                                    <!-- <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> -->
+                                </s_ad_div>
+                            </span>
+                        </div>
+                    </div>
+
+                    <s_if_var_adss-articletop-visible>
+                    <div class="ad-top-content">
+                        <!-- 디스플레이 수평 반응형 -->
+                        <ins class="adsbygoogle" style="display:block"
+                            data-ad-client="[##_var_google-adss-client_##]" data-ad-slot="[##_var_adss-articletop-slot_##]"
+                            data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <!-- 구글 애드센스 디스플레이 수평 반응형 끝 -->
+                    </div>
+                    </s_if_var_adss-articletop-visible>
+
+                    <article id="article" class="entry-content">
+                        [##_article_rep_desc_##]
+                    </article>
+    
+                    <s_tag_label>
+                        <div class="tags">
+                            <i class="fa-solid fa-tags"></i>
+                            <!-- <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Info</button> -->
+                            [##_tag_label_rep_##]
+                        </div>
+                    </s_tag_label>
+            
+                    <s_article_related>
+                    <div class="article-related">
+                        <h2>관련글</h2>
+                        <ul>
+                            <s_article_related_rep>
+                            <li>
+                                <a href="[##_article_related_rep_link_##]">
+                                    <figure>
+                                        <s_article_related_rep_thumbnail>
+                                        <img src="//i1.daumcdn.net/thumb/C176x120/?fname=[##_article_related_rep_thumbnail_link_##]" alt=""/>
+                                        </s_article_related_rep_thumbnail>
+                                    </figure>
+                                    <span class="title">[##_article_related_rep_title_##]</span>
+                                </a>
+                            </li>
+                            </s_article_related_rep>
+                        </ul>
+                    </div>
+
+                    <s_if_var_adss-multiplex-visible>
+                    <div>
+                        <!-- 구글 애드센스 멀티플렉스 반응형 -->
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                            data-ad-client="[##_var_google-adss-client_##]" data-ad-slot="[##_var_adss-multiplex-slot_##]"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    </s_if_var_adss-multiplex-visible>
+                    </s_article_related>
+    
+                    <div class="comments">
+                        <h2>댓글<span class="count"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></h2>
+                        <s_rp>
+                        <s_rp_container>
+                        <div class="comment-list">
+                            <ul>
+                                <s_rp_rep>
+                                <li id='[##_rp_rep_id_##]'>
+                                    <div class="author-meta">
+                                        <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                                        <span class="nickname">[##_rp_rep_name_##]</span>
+                                        <span class="date">[##_rp_rep_date_##]</span>
+                                        <span class="control">
+                                            <button type="button">더보기</button>
+                                            <div class="link">
+                                                <a href="[##_rp_rep_link_##]">댓글주소</a>
+                                                <a href="#"
+                                                    onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <p>[##_rp_rep_desc_##]<br>
+                                        <a href="#" onclick="[##_rp_rep_onclick_reply_##]"
+                                            class="reply">답글</a></p>
+                                    <s_rp2_container>
+                                    <ul>
+                                        <s_rp2_rep>
+                                        <li>
+                                            <div class="author-meta">
+                                                <img src="[##_rp_rep_logo_##]"
+                                                    class="avatar" alt="">
+                                                <span
+                                                    class="nickname">[##_rp_rep_name_##]</span>
+                                                <span
+                                                    class="date">[##_rp_rep_date_##]</span>
+                                                <span class="control">
+                                                    <button type="button">더보기</button>
+                                                    <div class="link">
+                                                        <a
+                                                            href="[##_rp_rep_link_##]">댓글주소</a>
+                                                        <a href="#"
+                                                            onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <p>[##_rp_rep_desc_##]</p>
+                                        </li>
+                                        </s_rp2_rep>
+                                    </ul>
+                                    </s_rp2_container>
+                                </li>
+                                </s_rp_rep>
+                            </ul>
+                        </div>
+                        </s_rp_container>
+    
+                        <s_rp_input_form>
+                        <div class="comment-form">
+                            <s_rp_member>
+                            <div class="field">
+                                <s_rp_guest>
+                                <input type="text" name="[##_rp_input_name_##]" class="form-control"
+                                        placeholder="이름" value="[##_guest_name_##]">
+                                    <input type="password" name="[##_rp_input_password_##]" class="form-control"
+                                        maxlength="8" placeholder="비밀번호"
+                                        value="[##_rp_admin_check_##]">
+                                </s_rp_guest>
+                                <div class="secret">
+                                    <input type="checkbox" name="[##_rp_input_is_secret_##]"
+                                        id="secret" class="form-control">
+                                    <label class="form-label" for="secret" tabindex="0">비밀글</label>
+                                </div>
+                            </div>
+                            </s_rp_member>
+                            <label class="form-label" for="[##_rp_input_comment_##]" class="screen_out">댓글</label>
+                            <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="form-control"
+                                cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+                            <div class="submit">
+                                <button type="submit" class="btn btn-primary" data-mdb-ripple-init
+                                    onclick="[##_rp_onclick_submit_##]">등록</button>
+                            </div>
+                        </div>
+                    </s_rp_input_form>
+                        </s_rp>
+                    </div>
+                </section>
+                </s_permalink_article_rep>
+                <!--T3 글 끝 -->
+            </s_article_rep>
+    
+            <s_tag>
+            <!--T3 태그 시작 -->
+            <section id="tag">
+                <div class="permalink_article text-center">
+                    <h1 class="article-title">태그</h1>
+                </div>
+                <div class="tags">
+                    <s_tag_rep>
+                        <a href="[##_tag_link_##]" class="btn btn-outline-info btn-rounded btn-sm" data-mdb-ripple-color="dark" role="button">[##_tag_name_##]</a>
+                    </s_tag_rep>
+                </div>
+            </section>
+            <!--T3 태그 끝 -->
+            </s_tag>
+
+            <s_guest>
+            <!--T3 방명록 시작 -->
+            <section id="guest">
+                <div class="title">
+                    <h3>방명록</h3>
+                </div>
+
+                <s_guest_input_form>
+                <div class="col-lg-10 mb-4 mb-lg-0">
+                    <s_guest_member>
+                    <!-- 낫 로그인, 외부인 -->
+                    <s_guest_form>
+                    <!-- 낫 로그인 -->
+                    <div class="mb-4">
+                        <label for="guest_input_name" class="form-label">*이름</label>
+                        <input
+                            type="text"
+                            id="guest_input_name"
+                            name="[##_guest_input_name_##]"
+                            value="[##_guest_name_##]"
+                            class="form-control"
+                            aria-describedby="nameHelp"
+                            placeholder="이름">
+                    </div>
+                    <div class="mb-4">
+                       <label for="guest_input_password" class="form-label">*암호</label>
+                       <input
+                            type="password"
+                            id="guest_input_password"
+                            maxlength="8"
+                            name="[##_guest_input_password_##]"
+                            value="[##_guest_password_##]"
+                            class="form-control"
+                            aria-describedby="passwordHelp"
+                            placeholder="암호">
+                    </div>
+                    </s_guest_form>
+                    <div class="mb-4">
+                        <input type="checkbox" id="guest_secret" name="secret" class="form-check-input">
+                        <label class="form-check-label" for="guest_secret">비밀글모드</label>
+                    </div>
+                    </s_guest_member>
+                    <div class="mb-4">
+                        <textarea
+                            name="[##_guest_textarea_body_##]"
+                            cols="50"
+                            rows="6"
+                            class="form-control"
+                            placeholder="내용을 입력하세요."></textarea>
+                    </div>
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input
+                            class="btn btn-primary btn-block mb-4"
+                            type="submit"
+                            value="등록"
+                            onclick="[##_guest_onclick_submit_##]"/>
+                    </div>
+                    <div class="my-1"></div>
+                </div>
+                </s_guest_input_form>
+
+                <s_guest_container>
+                <div class="guestList">
+                    <ol>
+                        <s_guest_rep>
+                        <li id="[##_guest_rep_id_##]">
+                            <div class="tt-rewrite-window">
+                                <div class="[##_guest_rep_class_##]">
+                                    <div class="tt-rewrite-window-top">
+                                        <div class="tt-rewrite-info">
+                                            <span class="name">[##_guest_rep_name_##]</span>
+                                            <span class="date">
+                                                [##_guest_rep_date_##]</span>
+                                        </div>
+                                    </div>
+                                    <p>[##_guest_rep_desc_##]</p>
+                                    <div class="re-control">
+                                        <div class="re-btn">
+                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">
+                                                <span>수정/삭제</span>
+                                            </a>
+                                            <a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write">
+                                                <span>답글쓰기</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <s_guest_reply_container>
+                                <ul>
+                                    <s_guest_reply_rep>
+                                        <li id="[##_guest_rep_id_##]">
+                                            <div class="tt-rewrite-window tt-rewrite-window2">
+                                                <div class="tt-div-re-icon">
+                                                    <i class="fas fa-reply fa-rotate-180"></i>
+                                                </div>
+                                                <div class="[##_guest_rep_class_##]">
+                                                    <div class="tt-rewrite-info">
+                                                        <span class="name">[##_guest_rep_name_##]</span>
+                                                        <span class="date">
+                                                            [##_guest_rep_date_##]</span>
+                                                    </div>
+                                                    <p>[##_guest_rep_desc_##]</p>
+                                                    <span class="re-control">
+                                                        <div class="re-btn">
+                                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]">
+                                                                <span>수정/삭제</span>
+                                                            </a>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </s_guest_reply_rep>
+                                </ul>
+                            </s_guest_reply_container>
+                        </li>
+                        </s_guest_rep>
+                    </ol>
+                </div>
+                </s_guest_container>
+            </section>
+            <!--T3 방명록 끝 -->
+            </s_guest>
+
+            <s_paging>
+            <!--T3 페이징 시작 -->
+            <section class="pagination">
+                <a [##_prev_page_##] class="prev [##_no_more_prev_##]" aria-label="이전 페이지"><i class="fa-regular fa-circle-left"></i></a>
+                <s_paging_rep>
+                    <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+                </s_paging_rep>
+                <a [##_next_page_##] class="next [##_no_more_next_##]" aria-label="다음 페이지"><i class="fa-regular fa-circle-right"></i></a>
+            </section>
+            <!--T3 페이징 끝 -->
+            </s_paging>
+
+            [##_revenue_list_lower_##]
+
+        </div>
+        <!--T2 컨텐트 종료 -->
+        <!--T2 사이드바 시작 -->
+        <aside id="aside" class="d-none d-lg-block col-lg-3 mx-2">
+            <s_sidebar>
+            <div id="aside-container1">
+                <s_sidebar_element>
+                <!-- 블로그 정보 -->
+                <section class="blogInfo">
+                    <h3>프로필</h3>
+                    <ul class="mb-0">
+                        <s_if_var_profile-img-visible>
+                        <li>
+                            <img class="" src="[##_image_##]" alt="블로그 이미지"/>
+                        </li>
+                        </s_if_var_profile-img-visible>
+                        <li class="">
+                            <p>
+                                <s_if_var_profile-nickname2>[##_var_profile-nickname2_##]</s_if_var_profile-nickname2>
+                                <s_not_var_profile-nickname2>[##_blogger_##]</s_not_var_profile-nickname2>
+                            </p>
+                            <p>[##_desc_##]</p>
+                        </li>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                <!-- 공지사항 -->
+                <s_rct_notice>
+                <section class="notice">
+                    <h3>공지사항</h3>
+                    <ul class="wb-all mb-0">
+                        <s_rct_notice_rep>
+                            <li class="overflow-hidden text-wrap px-1 my-2 mx-0"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></li>
+                        </s_rct_notice_rep>
+                    </ul>
+                </section>
+                </s_rct_notice>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                <!-- 카테고리 -->
+                <section id="category" class="category">
+                    <h3>카테고리</h3>
+                    [##_category_list_##]
+                </section>
+                </s_sidebar_element>
+            </div>
+            </s_sidebar>
+            <s_sidebar>
+            <div id="aside-container2">
+                <s_sidebar_element>
+                <!-- 최근글 -->
+                <section class="rctps">
+                    <h3>최근글</h3>
+                    <ul>
+                        <s_rctps_rep>
+                        <li>
+                            <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                        </li>
+                        </s_rctps_rep>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                <!-- 인기글 -->
+                <section class="rctps-popular">
+                    <h3>인기글</h3>
+                    <ul>
+                    <s_rctps_rep>
+                        <li>
+                            <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                        </li>
+                    </s_rctps_rep>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                <!-- 최근댓글 -->
+                <section class="rctrp">
+                    <h3>최근댓글</h3>
+                    <ul class="wb-all mb-0">
+                        <s_rctrp_rep>
+                            <li><a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a></li>
+                        </s_rctrp_rep>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+            </div>
+            </s_sidebar>
+            <s_sidebar>
+            <div id="aside-container3" class="">
+                <s_sidebar_element>
+                <!-- 태그 -->
+                <section class="tags">
+                    <h3><i class="fa-solid fa-tags"></i> 태그</h3>
+                    <s_random_tags>
+                    <a href="[##_tag_link_##]" class="btn btn-outline-info btn-rounded btn-sm" data-mdb-ripple-color="dark" role="button">[##_tag_name_##]</a>
+                    </s_random_tags>
+                </section>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                <!--링크-->
+                <section class="link">
+                    <h3>링크</h3>
+                    <ul>
+                        <s_link_rep>
+                            <li>
+                                <a href="[##_link_url_##]" target="_blank">[##_link_site_##]</a>
+                            </li>
+                        </s_link_rep>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                <!--달력-->
+                <section class="calendar">
+                    <h3>달력</h3>
+                    <div class="">
+                        [##_calendar_##]
+                    </div>
+                </section>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                <!--글보관함-->
+                <section class="archive">
+                    <h3>글보관함</h3>
+                    <ul>
+                        <s_archive_rep>
+                        <li>
+                            <a href="[##_archive_rep_link_##]" class="archive-date position-relative">[##_archive_rep_date_##]
+                                <span class="badge badge-danger ms-2">[##_archive_rep_count_##]</span>
+                            </a>
+                        </li>
+                        </s_archive_rep>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                <!--방문자 카운터-->
+                <section class="count">
+                    <h3>방문자 카운터</h3>
+                    <ul>
+                        <li class="today">[##_count_today_##]</li>
+                        <li class="yesterday">어제 : [##_count_yesterday_##]</li>    
+                        <li class="accumulate">누적: [##_count_total_##]</li>
+                    </ul>
+                </section>
+                </s_sidebar_element>
+            </div>
+           </s_sidebar>
+        </aside>
+        <!-- 사이드바 종료 -->
+    </div>
+    <!--T1 메인 본문 끝 -->
+    <!--T1 메인 하단 시작 -->
+    <div class="row flex-nowrap">
+        <div class="col">
+            <!--T3 섹션 메인 하단 애드센스 시작 -->
+            <s_if_var_adss-maintop-visible>
+            <section id="adss-mainbottom" class="container-fluid mt-lg-1 adss-horizontal">
+                <!-- 디스플레이 수평 -->
+                <ins class="adsbygoogle adss-horizontal"
+                        style="display:block"
+                        data-ad-client="[##_var_google-adss-client_##]"
+                        data-ad-slot="[##_var_adss-adss-maintop-slot_##]"
+                        data-ad-format="horizontal"
+                        data-full-width-responsive="true"></ins>
+                <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </section>
+            </s_if_var_adss-maintop-visible>
+            <!--T3 섹션 메인 하단 애드센스 끝 -->
+        </div>
+    </div>
+    <!--T1 메인 하단 끝 -->
+</main>
+
+<s_if_var_float-sideTools-visible>
+<!-- TOP버튼 + 글쓰기 관리자 카테고리 시작 -->
+<section id="float-sideTool">
+    <ul>
+        <!-- <li class="isset-admin">
+            <div>
+                <a href="/manage/newpost" data-text="글쓰기"><i class="fa-solid fa-pencil"></i></a>
+            </div>
+        </li>
+        <li class="isset-admin">
+            <div>
+                <a href="/manage" data-text="관리"><i class="fas fa-cog"></i></a>
+            </div>
+        </li> -->
+        <li class="isset-category">
+            <div>
+                <a href="#category" data-text="범주"><i class="fa-solid fa-folder-tree"></i></a>
+            </div>
+        </li>
+        <li class="isset-toc">
+            <div>
+                <a href="#toc" data-text="목차"><i class="fa-regular fa-rectangle-list"></i></a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="#top" data-text="맨위로"><i class="fa-solid fa-angles-up"></i></a>
+            </div>
+        </li>
+    </ul>
+</section>
+<!-- TOP버튼 + 글쓰기 관리자 카테고리 끝 -->
+</s_if_var_float-sideTools-visible>
+
+<footer id="footer" class="text-center container-fluid p-0 mb-1 border-top align-items-center">
+    <ul class="nav nav-tabs nav-fill mb-3 px-5" id="footer-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="footer-tab-license" data-mdb-toggle="tab" href="#footer-tabs-license" role="tab" aria-controls="footer-tabs-license" aria-selected="true">License</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="footer-tab-favorite" data-mdb-toggle="tab" href="#footer-tabs-favorite" role="tab" aria-controls="footer-tabs-favorite" aria-selected="false">Favorite</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="footer-tab-contact" data-mdb-toggle="tab" href="#footer-tabs-contact" role="tab" aria-controls="footer-tabs-contact" aria-selected="false">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="footer-tabContent">
+    <div class="tab-pane fade show active" id="footer-tabs-license" role="tabpanel" aria-labelledby="footer-tab-license">
+        <s_if_var_footer-text-1>[##_var_footer-text-1_##]</s_if_var_footer-text-1>
+        <p>Bootstrap Skin beta: MIT License.</p>
+    </div>
+    <div class="tab-pane fade" id="footer-tabs-favorite" role="tabpanel" aria-labelledby="footer-tab-favorite">
+        <ul class="nav justify-content-center">
+            <s_if_var_order-link-1-title>
+            <li class="nav-item"><a href="[##_var_order-link-1-url_##]">[##_var_order-link-1-title_##]</a></li>
+            </s_if_var_order-link-1-title>
+            <s_if_var_order-link-2-title>
+            <li class="nav-item"><a href="[##_var_order-link-2-url_##]"></li>[##_var_order-link-2-title_##]</a>
+            </s_if_var_order-link-2-title>
+            <s_if_var_order-link-3-title>
+            <li class="nav-item"><a href="[##_var_order-link-3-url_##]"></li>[##_var_order-link-3-title_##]</a>
+            </s_if_var_order-link-3-title>
+            <s_if_var_order-link-4-title>
+            <li class="nav-item"><a href="[##_var_order-link-4-url_##]">[##_var_order-link-4-title_##]</a></li>
+            </s_if_var_order-link-4-title>
+        </ul>
+    </div>
+    <div class="tab-pane fade" id="footer-tabs-contact" role="tabpanel" aria-labelledby="footer-tab-contact">
+        <address></address>
+    </div>
+    </div>
+    <div class="text-center p-3" style="background-color: hsla(0, 0%, 0%, 0.2);">
+        <s_if_var_footer-text-2><a class="text-dark" href="[##_blog_link_##]">[##_var_footer-text-2_##]</a></s_if_var_footer-text-2>
+    </div>
+</footer>
+</s_t3>
+
+<script src="./images/script.min.js"></script>
+<s_if_var_prognroll-enabled>
+<script>
+$("body").prognroll({
+    custom: false
+});
+</script>
+</s_if_var_prognroll-enabled>
+</body>
+</html>
