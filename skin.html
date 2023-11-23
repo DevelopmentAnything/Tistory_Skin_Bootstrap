@@ -93,60 +93,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
     :root {
         --ref-font-size: 16px; /* 기준 글꼴 크기 */
-        --point-color: <s_if_var_point-color>[##_var_point-color_##]</s_if_var_point-color>;
-        --main-font-color: #FFF;
-        --sub-bg-color: #E5E5E5;
-        --sub-header-color: #FFF;
-        --mouse-hover-color: #FF5544;
-        --prognroll-height: 5px;
-        --prognroll-bg-color: #60C5F1;
-        --article-link-color: #1D67B1;
-        --article-list-color: #888;
-        --article-list-link-color: #1D67B1;
-        --article-admin-color: #FF5544;
-        --tt-badge-color: #FFF;
-        --footer-link-color: #FF0;
-        --border-radius: 5px;
-        --article-font-size-m: 1em;
-        --article-font-size-pc: 1.1em;
-        --article-line-height-m: 1.5em;
-        --article-line-height-pc: 1.6em;
-        --article-letter-spacing: 0;
-        --article-first-letter-spacing: 10px;
-        --container-width: 1200px;
-        --tt-reply-bg-color: #FFF;
-        --tt-reply-line-color: #CCC;
-        --reply-bg-color: #EEE;
-        --reply-color: #333;
-        --reply-bg-color2: #555;
-        --reply-color2: #FFF;
-        --reply-icon-color: #555;
-        --reply-name-color: #404040;
-        --reply-date-color: #CCC;
-        --reply-report-color: #FF5544;
-        --more-reply-bg-color: #555;
-        --more-reply-color: #FFF;
-        --cover-grid-thumb-height: 120px;
-        --cover-gallery1-thumb-height: 250px;
-        --cover-gallery2-thumb-height: 250px;
-        --cover-thumbnail-wide-thumb-height: 250px;
-        --tt-article-reply-font-size: 13px;
-        --tt-article-reply-line-height: 1.3rem;
-        --tt-loading-image-size: 1;
-        --tt-loading-color: #fff;
-        --article-table-font-size: 14px;
-        --global-notice-border-width: <s_if_var_global-notice-border-width>[##_var_global-notice-border-width_##]</s_if_var_global-notice-border-width>;
-        --global-notice-border-color: <s_if_var_global-notice-border-color>[##_var_global-notice-border-color_##]</s_if_var_global-notice-border-color>;
-        --global-notice-bg-color: <s_if_var_global-notice-bg-color>[##_var_global-notice-bg-color_##]</s_if_var_global-notice-bg-color>;
-        --global-notice-font-size: <s_if_var_global-notice-font-size>[##_var_global-notice-font-size_##]</s_if_var_global-notice-font-size>;
-        --global-notice-font-color: <s_if_var_global-notice-font-color>[##_var_global-notice-font-color_##]</s_if_var_global-notice-font-color>;
-        --tt-sidebar-word-line-clamp: 1;
-        --tt-article-bold-color: #222;
-        --tt-article-bold-bg-color: #C0FFEE;
-        --tt-article-toc-color: #676767;
-        --tt-article-toc-hover-color: #f00;
-        --tt-article-toc-bg: linear-gradient(to right, #FFF76617, #ffffff);
-        --float-sideTool-rect-size: 35px;
+        --point-color: <s_if_var_point-color>[##_var_point-color_##]</s_if_var_point-color>; /* 主 색상 */
+        --main-font-color: #FFF; /* 主 글꼴 색상 */
+        --sub-bg-color: #E5E5E5; /* 테두리 색상 */
+        --mouse-hover-color: #FF5544; /* 마우스 오버 색상 */
+        --prognroll-height: 5px; /* 프로그레스바 높이 */
+        --prognroll-bg-color: #60C5F1; /* 프로그레스바 색상 */
+        --article-link-color: #1D67B1; /* 글 링크 색상 */
+        --article-admin-color: #FF5544; /* 글 관리 링크 색상 */
+        --border-radius: 5px; /* 主 모깎기 */
+        --border-lg-radius: 10px; /* 큰 상자 모깎기 */
+        --border-sm-radius: 3px; /* 작은 상자 모깎기 */
+        --article-letter-spacing: 0; /* 글 자간 */
+        --article-first-letter-spacing: 10px; /* 글 첫 글자 들여쓰기 */
+        --global-notice-border-width: <s_if_var_global-notice-border-width>[##_var_global-notice-border-width_##]</s_if_var_global-notice-border-width>; /* 공지사항 테두리 두께 */
+        --global-notice-border-color: <s_if_var_global-notice-border-color>[##_var_global-notice-border-color_##]</s_if_var_global-notice-border-color>; /* 공지사항 테두리 색상 */
+        --global-notice-bg-color: <s_if_var_global-notice-bg-color>[##_var_global-notice-bg-color_##]</s_if_var_global-notice-bg-color>; /* 공지사항 배경 색상 */
+        --global-notice-font-size: <s_if_var_global-notice-font-size>[##_var_global-notice-font-size_##]</s_if_var_global-notice-font-size>; /* 공지사항 글꼴 크기 */
+        --global-notice-font-color: <s_if_var_global-notice-font-color>[##_var_global-notice-font-color_##]</s_if_var_global-notice-font-color>; /* 공지사항 글꼴 색상 */
+        --aside-article-line-clamp: 1; /* 사이드바 문장 줄 수*/
+        --float-sideTool-rect-size: 35px; /* 사이드 도구모음 버튼 크기 */
         --float-sideTool-opacity: .75; /* 투명도 */
         --float-sideTool-transform-scale: 1; /* 크기 배율 */
    }
@@ -201,7 +167,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="[##_guestbook_link_##]" title="방명록" class="nav-link link-body-emphasis"><i class="fa-solid fa-user-pen"></i> 방명록</a>
                         </li>
                         <li class="nav-item">
-                            <a href="[##_taglog_link_##]" class="nav-link link-body-emphasis"><i class="fa-solid fa-tag"></i> 태그</a>
+                            <!--[##_taglog_link_##]-->
+                            <a href="/tag" class="nav-link link-body-emphasis"><i class="fa-solid fa-tag"></i> 태그</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle link-body-emphasis" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false">즐겨찾기</a>
@@ -279,9 +246,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--T2 섹션 메인 상단 애드센스 시작 -->
     <s_if_var_adss-maintop-visible>
     <div class="row flex-nowrap">
-        <div id="adss-maintop" class="d-none d-lg-block container-fluid mt-lg-1 adss-horizontal">
+        <div id="adss-maintop" class="d-none d-lg-block container-fluid mt-lg-1 adss-main-horizontal">
             <!-- 디스플레이 수평 -->
-            <ins class="adsbygoogle adss-horizontal"
+            <ins class="adsbygoogle adss-main-horizontal"
                     style="display:block"
                     data-ad-client="[##_var_google-adss-client_##]"
                     data-ad-slot="[##_var_adss-adss-maintop-slot_##]"
@@ -358,9 +325,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="cover-list-infeedAdsense">
                             <!-- 인피드 광고 -->
                             <ins class="adsbygoogle"
-                                style="display:block"
+                                style="display:block;height:120px"
                                 data-ad-format="fluid"
-                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
                                 data-ad-client="[##_var_google-adss-client_##]"
                                 data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
                             <script>
@@ -411,9 +378,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="cover-list-infeedAdsense">
                             <!-- 인피드 광고 -->
                             <ins class="adsbygoogle"
-                                style="display:block"
+                                style="display:block;height:120px"
                                 data-ad-format="fluid"
-                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
                                 data-ad-client="[##_var_google-adss-client_##]"
                                 data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
                             <script>
@@ -466,9 +433,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="cover-list-infeedAdsense">
                             <!-- 인피드 광고 -->
                             <ins class="adsbygoogle"
-                                style="display:block"
+                                style="display:block;height:120px"
                                 data-ad-format="fluid"
-                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
                                 data-ad-client="[##_var_google-adss-client_##]"
                                 data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
                             <script>
@@ -521,9 +488,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="cover-list-infeedAdsense">
                             <!-- 인피드 광고 -->
                             <ins class="adsbygoogle"
-                                style="display:block"
+                                style="display:block;height:120px"
                                 data-ad-format="fluid"
-                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
                                 data-ad-client="[##_var_google-adss-client_##]"
                                 data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
                             <script>
@@ -577,9 +544,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="cover-list-infeedAdsense">
                             <!-- 인피드 광고 -->
                             <ins class="adsbygoogle"
-                                style="display:block"
+                                style="display:block;height:120px"
                                 data-ad-format="fluid"
-                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
                                 data-ad-client="[##_var_google-adss-client_##]"
                                 data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
                             <script>
@@ -625,9 +592,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="cover-list-infeedAdsense">
                             <!-- 인피드 광고 -->
                             <ins class="adsbygoogle"
-                                style="display:block"
+                                style="display:block;height:120px"
                                 data-ad-format="fluid"
-                                data-ad-layout-key="-i1-7+2h-1m-4u"
+                                data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
                                 data-ad-client="[##_var_google-adss-client_##]"
                                 data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
                             <script>
@@ -674,7 +641,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </s_notice_rep>
 
             <s_list>
-            <!--T3 목록 시작: 카테고리, 검색, 태그 -->
+            <!--T3 목록 시작: 카테고리, 검색, 태그 상단 출력 -->
             <section id="list">
                 <!--구글검색엔진-->
                 <script async src="https://cse.google.com/cse.js?cx=2f13b4ef829ce2341">
@@ -688,6 +655,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span>[##_list_conform_##]</span>
                     </h1>
                 </div>
+
+                <s_if_var_adss-listinfeed-visible>
+                <div class="adss-section-horizontal">
+                    <!-- 인피드 측면 이미지 -->
+                    <ins class="adsbygoogle"
+                        style="display:block;height:120px"
+                        data-ad-format="fluid"
+                        data-ad-layout-key="[##_var_adss-listinfeed-key_##]"
+                        data-ad-client="[##_var_google-adss-client_##]"
+                        data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <!-- 인피드 측면 이미지 끝 -->
+                </div>
+                </s_if_var_adss-listinfeed-visible>
+    
                 <s_list_empty>
                 <article class="entry-content not-found">
                     <ul>
@@ -784,52 +768,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </s_article_protected>
 
             <s_article_rep>
-                <!--T4 인덱스 시작 -->    
+                <!--T4 글 인덱스 반복 시작. 제목 밑 -->    
                 <s_index_article_rep>
                 <div class="index-list-content">
-                    <div class="index-list-content-inner">
-                        <a
-                            href="[##_article_rep_link_##]"
-                            aria-label="[##_article_rep_title_##]"
-                            class="index-inner-left"
-                            style="background-image: url(<s_if_var_tt-thumbnail>[##_var_tt-thumbnail_##]</s_if_var_tt-thumbnail><s_not_var_tt-thumbnail>./images/ch.gif</s_not_var_tt-thumbnail>);">
-                            <s_article_rep_thumbnail>
-                                <div
-                                    class="tt-index-img"
-                                    style="background-image: url('[##_article_rep_thumbnail_url_##]');"></div>
-                            </s_article_rep_thumbnail>
+                    <a
+                        href="[##_article_rep_link_##]"
+                        aria-label="[##_article_rep_title_##]"
+                        class="index-inner-left"
+                        style="background-image: url(<s_if_var_tt-thumbnail>[##_var_tt-thumbnail_##]</s_if_var_tt-thumbnail><s_not_var_tt-thumbnail>./images/ch.gif</s_not_var_tt-thumbnail>);">
+                        <s_article_rep_thumbnail>
+                            <div
+                                class="tt-index-img"
+                                style="background-image: url('[##_article_rep_thumbnail_url_##]');"></div>
+                        </s_article_rep_thumbnail>
+                    </a>
+                    <div class="index-inner-right">
+                        <a href="[##_article_rep_link_##]" class="link_post">
+                            <h1 class="tit_post article-title">[##_article_rep_title_##]</h1>
+                            <p class="txt_post">[##_article_rep_summary_##]</p>
                         </a>
-                        <div class="index-inner-right">
-                            <a href="[##_article_rep_link_##]" class="link_post">
-                                <h1 class="tit_post article-title">[##_article_rep_title_##]</h1>
-                                <p class="txt_post">[##_article_rep_summary_##]</p>
-                            </a>
-                            <div class="detail_info">
-                                <a href="[##_article_rep_category_link_##]" class="link_cate">
-                                    <i class="fa-solid fa-folder-tree"></i>[##_article_rep_category_##]</a>
-                                <span class="txt_bar">
-                                    <i class="far fa-calendar"></i>[##_article_rep_date_##]</span>
-                            </div>
+                        <div class="detail_info">
+                            <a href="[##_article_rep_category_link_##]" class="link_cate">
+                                <i class="fa-solid fa-folder-tree"></i>[##_article_rep_category_##]</a>
+                            <span class="txt_bar">
+                                <i class="far fa-calendar"></i>[##_article_rep_date_##]</span>
                         </div>
                     </div>
                 </div>
-        
-                <s_if_var_adss-listinfeed-visible>
-                <div class="adss-listinfeed">
-                    <!-- 인피드 광고 -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-format="fluid"
-                        data-ad-layout="image-side"
-                        data-ad-layout-key="-i1-7+2h-1m-4u"
-                        data-ad-client="[##_var_google-adss-client_##]"
-                        data-ad-slot="[##_var_adss-listinfeed-slot_##]"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                </s_if_var_adss-listinfeed-visible>    
-                <!--T4 인덱스 끝 -->
+                <!--T4 글 인덱스 반복 끝 -->
                 </s_index_article_rep>
         
                 <!--T3 글 시작 -->
@@ -861,7 +827,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <span class="author"><i class="fa-solid fa-feather"></i> [##_article_rep_author_##]</span>
                                 <span class="date"><i class="fa-regular fa-clock"></i> [##_article_rep_simple_date_##]</span>
                                 <s_ad_div>
-                                    <a href="[##_s_ad_m_link_##]">수정</a>
+                                    <a class="isadmin" href="[##_s_ad_m_link_##]">수정</a>
                                     <!-- <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> -->
                                 </s_ad_div>
                             </span>
@@ -869,9 +835,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <s_if_var_adss-articletop-visible>
-                    <div class="ad-top-content">
+                    <div class="adss-section-horizontal">
                         <!-- 디스플레이 수평 반응형 -->
-                        <ins class="adsbygoogle" style="display:block"
+                        <ins class="adsbygoogle adss-section-horizontal" style="display:block"
                             data-ad-client="[##_var_google-adss-client_##]" data-ad-slot="[##_var_adss-articletop-slot_##]"
                             data-ad-format="auto" data-full-width-responsive="true"></ins>
                         <script>
@@ -1001,8 +967,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <label class="form-label" for="[##_rp_input_comment_##]" class="screen_out">댓글</label>
                             <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="form-control"
                                 cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
-                            <div class="submit">
-                                <button type="submit" class="btn btn-primary" data-mdb-ripple-init
+                            <div class="submit align-items-center">
+                                <!-- 디스플레이 고정 300*50 -->
+                                <ins class="adsbygoogle"
+                                style="display:inline-block;width:300px;height:50px"
+                                data-ad-client="ca-pub-7938029191014931"
+                                data-ad-slot="4843503264"></ins>
+                                <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                                
+                                <button type="submit" class="btn btn-primary " data-mdb-ripple-init
                                     onclick="[##_rp_onclick_submit_##]">등록</button>
                             </div>
                         </div>
@@ -1020,10 +995,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="permalink_article text-center">
                     <h1 class="article-title">태그</h1>
                 </div>
+
+                <s_if_var_adss-articletop-visible>
+                <div class="adss-section-horizontal">
+                    <!-- 디스플레이 수평 반응형 -->
+                    <ins class="adsbygoogle adss-section-horizontal" style="display:block"
+                        data-ad-client="[##_var_google-adss-client_##]" data-ad-slot="[##_var_adss-articletop-slot_##]"
+                        data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <!-- 구글 애드센스 디스플레이 수평 반응형 끝 -->
+                </div>
+                </s_if_var_adss-articletop-visible>
+
                 <div class="tags">
-                    <s_tag_rep>
-                        <a href="[##_tag_link_##]" class="btn btn-outline-info btn-rounded btn-sm" data-mdb-ripple-color="dark" role="button">[##_tag_name_##]</a>
-                    </s_tag_rep>
+                <s_tag_rep>
+                    <a href="[##_tag_link_##]" class="btn btn-outline-info btn-rounded btn-sm" data-mdb-ripple-color="dark" role="button">[##_tag_name_##]</a>
+                </s_tag_rep>
                 </div>
             </section>
             <!--T3 태그 끝 -->
@@ -1032,17 +1021,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <s_guest>
             <!--T3 방명록 시작 -->
             <section id="guest">
-                <div class="title">
-                    <h3>방명록</h3>
+                <div class="permalink_article text-center">
+                    <h1 class="article-title">방명록</h1>
                 </div>
 
                 <s_guest_input_form>
-                <div class="col-lg-10 mb-4 mb-lg-0">
-                    <s_guest_member>
-                    <!-- 낫 로그인, 외부인 -->
-                    <s_guest_form>
-                    <!-- 낫 로그인 -->
-                    <div class="mb-4">
+                <div class="flex-fill mb-4 mb-lg-0">
+                    <s_guest_member><!-- 낫 로그인 | 외부인 -->
+                    <s_guest_form><!-- 낫 로그인 -->
+                    <div class="mb-1">
                         <label for="guest_input_name" class="form-label">*이름</label>
                         <input
                             type="text"
@@ -1053,7 +1040,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             aria-describedby="nameHelp"
                             placeholder="이름">
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-1">
                        <label for="guest_input_password" class="form-label">*암호</label>
                        <input
                             type="password"
@@ -1066,12 +1053,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             placeholder="암호">
                     </div>
                     </s_guest_form>
-                    <div class="mb-4">
+                    <div class="mb-1">
                         <input type="checkbox" id="guest_secret" name="secret" class="form-check-input">
                         <label class="form-check-label" for="guest_secret">비밀글모드</label>
                     </div>
                     </s_guest_member>
-                    <div class="mb-4">
+                    <div class="mb-1">
                         <textarea
                             name="[##_guest_textarea_body_##]"
                             cols="50"
@@ -1079,7 +1066,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             class="form-control"
                             placeholder="내용을 입력하세요."></textarea>
                     </div>
-                    <div class="form-check d-flex justify-content-center mb-4">
+
+                    <s_if_var_adss-articletop-visible>
+                    <div class="adss-section-horizontal">
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:728px;height:90px"
+                            data-ad-client="[##_var_google-adss-client_##]"
+                            data-ad-slot="[##_var_adss-articletop-slot_##]"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    </s_if_var_adss-articletop-visible>
+
+                    <div class="mb-4">
                         <input
                             class="btn btn-primary btn-block mb-4"
                             type="submit"
@@ -1089,7 +1089,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="my-1"></div>
                 </div>
                 </s_guest_input_form>
-
+                <hr class="hr"/>
                 <s_guest_container>
                 <div class="guestList">
                     <ol>
@@ -1333,9 +1333,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col">
             <!--T3 섹션 메인 하단 애드센스 시작 -->
             <s_if_var_adss-maintop-visible>
-            <section id="adss-mainbottom" class="container-fluid mt-lg-1 adss-horizontal">
+            <section id="adss-mainbottom" class="container-fluid mt-lg-1 adss-main-horizontal">
                 <!-- 디스플레이 수평 -->
-                <ins class="adsbygoogle adss-horizontal"
+                <ins class="adsbygoogle adss-main-horizontal"
                         style="display:block"
                         data-ad-client="[##_var_google-adss-client_##]"
                         data-ad-slot="[##_var_adss-adss-maintop-slot_##]"
@@ -1356,12 +1356,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- TOP버튼 + 글쓰기 관리자 카테고리 시작 -->
 <section id="float-sideTool">
     <ul>
-        <!-- <li class="isset-admin">
+        <!-- <li class="isadmin">
             <div>
                 <a href="/manage/newpost" data-text="글쓰기"><i class="fa-solid fa-pencil"></i></a>
             </div>
         </li>
-        <li class="isset-admin">
+        <li class="isadmin">
             <div>
                 <a href="/manage" data-text="관리"><i class="fas fa-cog"></i></a>
             </div>

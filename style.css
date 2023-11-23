@@ -76,8 +76,18 @@ s {
     line-height: 2;
     text-shadow: 0 0 5px var(--mouse-hover-color);
 }
+.permalink_article .isadmin {
+    color: var(--article-admin-color);
+}
 
 /** 본문 **/
+article {
+    letter-spacing: var(--article-letter-spacing) !important;
+
+}
+article .contents_style > p::first-letter {
+    margin-left: var(--article-first-letter-spacing) !important;
+}
 article h2 {
     position: relative;
     padding: 10px 10px 7px 15px;
@@ -154,7 +164,7 @@ article blockquote[data-ke-style="style3"] {
     border: 1px solid var(--point-color) !important;
 }
 article a {
-    color: var(--point-color);
+    color: var(--article-link-color);
 }
 article p {
 }
@@ -190,7 +200,7 @@ article hr[data-ke-style="style8"] {
 }
 article b {
     padding: 1px 4px;
-    border-radius: 3px;
+    border-radius: var(--border-sm-radius);
     background-color: #eeff00 !important;
 }
 article pre {
@@ -556,6 +566,9 @@ article .protected_form .btn {
 .comment-form .submit {
     text-align: right;
 }
+.comment-form .submit button {
+    vertical-align: top;
+}
 
 /** 태그 **/
 #section-article .tags {
@@ -607,10 +620,10 @@ article .protected_form .btn {
     border-color: var(--point-color, #555) !important;
 }
 #aside section:first-of-type {
-    border-radius: 10px 10px 0 0 !important;
+    border-radius: calc(var(--border-radius)*2) calc(var(--border-radius)*2) 0 0 !important;
 }
 #aside section:last-of-type {
-    border-radius: 0 0 10px 10px !important;
+    border-radius: 0 0 calc(var(--border-radius)*2) calc(var(--border-radius)*2) !important;
 }
 #aside section > h3 {
     padding: 5px;
@@ -642,7 +655,7 @@ article .protected_form .btn {
 #aside ul.wb-all li {
     display: -webkit-box;
     word-break: break-all;
-    -webkit-line-clamp: var(--tt-sidebar-word-line-clamp) !important;
+    -webkit-line-clamp: var(--aside-article-line-clamp) !important;
     -webkit-box-orient: vertical;
 }
 
@@ -703,7 +716,7 @@ article .protected_form .btn {
     display: none;
 }
 #cover .ttCoverElement .row {
-    border-radius: 10px 10px 0 0;
+    border-radius: calc(var(--border-radius)*2) calc(var(--border-radius)*2) 0 0;
 }
 
 /**** 와이드바 커버 ****/
@@ -1356,22 +1369,19 @@ article .protected_form .btn {
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    margin: 0 20px 20px;
+    margin: 0 0 20px;
     border: 1px solid #555;
     border-radius: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .index-list-content:hover {
     border-color: #ff5544;
 }
 
-.index-list-content .index-list-content-inner {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.index-list-content .index-list-content-inner .index-inner-left {
+.index-list-content .index-inner-left {
     display: block;
     width: 120px;
     height: 120px;
@@ -1383,7 +1393,7 @@ article .protected_form .btn {
     -webkit-filter: contrast(0.9);
 }
 
-.index-list-content .index-list-content-inner .index-inner-left .tt-index-img {
+.index-list-content .index-inner-left .tt-index-img {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -1391,14 +1401,12 @@ article .protected_form .btn {
     background-size: cover;
 }
 .index-list-content
-    .index-list-content-inner
     .index-inner-left
     .tt-index-secret {
     line-height: 120px;
     text-align: center;
 }
 .index-list-content
-    .index-list-content-inner
     .index-inner-left
     .tt-index-secret
     .fa-solid {
@@ -1410,19 +1418,18 @@ article .protected_form .btn {
     -webkit-filter: contrast(1) !important;
 }
 
-.index-list-content .index-list-content-inner .index-inner-right {
+.index-list-content .index-inner-right {
     display: flex;
     flex-direction: column;
     width: calc(100% - 135px);
     padding: 5px 0;
 }
 
-.index-list-content .index-list-content-inner .index-inner-right a.link_post {
+.index-list-content .index-inner-right a.link_post {
     display: inline-block;
 }
 
 .index-list-content
-    .index-list-content-inner
     .index-inner-right
     a.link_post
     h1.tit_post {
@@ -1438,20 +1445,18 @@ article .protected_form .btn {
 }
 
 .index-list-content
-    .index-list-content-inner
     .index-inner-right
     a.link_post
     p.txt_post {
     display: none;
 }
 
-.index-list-content .index-list-content-inner .index-inner-right .detail_info {
+.index-list-content .index-inner-right .detail_info {
     padding-top: 10px;
     font-size: 10px;
 }
 
 .index-list-content
-    .index-list-content-inner
     .index-inner-right
     .detail_info
     i {
@@ -1460,7 +1465,6 @@ article .protected_form .btn {
 }
 
 .index-list-content
-    .index-list-content-inner
     .index-inner-right
     .detail_info
     a.link_cate {
@@ -1518,7 +1522,7 @@ article .protected_form .btn {
 .pagination .selected {
     margin: 0 -5px;
     padding: 3px 5px;
-    border-radius: 3px;
+    border-radius: var(--border-sm-radius);
     color: #fff;
     background-color: #555;
 }
@@ -1535,8 +1539,25 @@ article .protected_form .btn {
 /**** Plugins ****/
 /*** 애드센스 ***/
 .cover-list-infeedAdsense {
-    min-height: 140px;
-    margin: 0;
+    padding: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.adss-main-horizontal {
+    width: 320px;
+    height: 100px;
+}
+@media (min-width: 400px) {
+    .adss-main-horizontal {
+        width: 100%;
+        height: 90px;
+        min-width: 400px;
+        max-width: 1270px;
+    }
+}
+.adss-section-horizontal {
+    margin: 0 0 20px;
+    padding: 0;
 }
 
 /** 로딩 이미지 **/
@@ -1569,20 +1590,6 @@ img.lazy {
     background-position: 50% 50%;
 }
 
-/* 애드센스 */
-.adss-horizontal {
-    width: 320px;
-    height: 100px;
-}
-@media (min-width: 400px) {
-    .adss-horizontal {
-        width: 100%;
-        height: 90px;
-        min-width: 400px;
-        max-width: 1270px;
-    }
-}
-
 /* 코드 강조 */
 code {
     font-family: "Nanum Gothic Coding", sans-serif;
@@ -1594,6 +1601,7 @@ code {
     border: 1px solid var(--point-color); /* 테두리 속성 설정 */
     background: linear-gradient(to right, #fff76617, #ffffff);
     border-width: 5px 1px 1px 1px;
+    border-radius: var(--border-lg-radius);
 }
 
 #toc ul {

@@ -137,7 +137,7 @@ License: MIT License
         document.removeEventListener('copy', copyWithSource);
         document.addEventListener('copy', copyWithSource2);
 
-        $(".contents_style").find("p, table, ul, ol").addClass("user-select-none");
+        $(".contents_style").find("p, table, ul, ol, img").addClass("user-select-none");
 
         /*
         // 모바일 슬라이드 버튼

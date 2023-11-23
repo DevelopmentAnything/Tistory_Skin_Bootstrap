@@ -276,6 +276,18 @@
                 </description>
             </variable>
             <variable>
+                <name>adss-articleinfeed-key</name>
+                <label>
+                    <![CDATA[ 글 본문 인피드 광고 key ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>-i4-d+1k-3j+55</default>
+                <description>
+                    <![CDATA[ 광고의 key 값을 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
                 <name>adss-listinfeed-visible</name>
                 <label>
                     <![CDATA[ 글 목록 인피드 광고 사용 ]]>
@@ -297,6 +309,18 @@
                 <default>6950851928</default>
                 <description>
                     <![CDATA[ 광고의 slot 번호를 입력하세요. ]]>
+                </description>
+            </variable>
+            <variable>
+                <name>adss-listinfeed-key</name>
+                <label>
+                    <![CDATA[ 글 목록 인피드 광고 key ]]>
+                </label>
+                <type>STRING</type>
+                <option />
+                <default>-g8+u-k-i9+z7</default>
+                <description>
+                    <![CDATA[ 광고의 key 값을 입력하세요. ]]>
                 </description>
             </variable>
             <variable>
