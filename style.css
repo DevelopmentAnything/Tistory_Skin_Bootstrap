@@ -176,6 +176,9 @@ article p img {
 }
 article figure {
 }
+article hr {
+    opacity: 1 !important;
+}
 article hr[data-ke-style="style1"] {
 }
 article hr[data-ke-style="style2"] {
@@ -183,20 +186,16 @@ article hr[data-ke-style="style2"] {
 article hr[data-ke-style="style3"] {
 }
 article hr[data-ke-style="style4"] {
+    background: none !important;
+    border-left: 2px solid var(--point-color) !important;
 }
 article hr[data-ke-style="style5"] {
-    width: 100%;
-    border: 0px;
     background: none !important;
-    border-top: 3px solid #000;
-    opacity: 1 !important;
+    border-top: 2px solid var(--point-color) !important;
 }
 article hr[data-ke-style="style6"] {
-    width: 100%;
-    border: 0px;
     background: none !important;
-    border-top: 2px dashed #000;
-    opacity: 1 !important;
+    border-top: 2px dashed var(--point-color) !important;
 }
 article hr[data-ke-style="style7"] {
 }
