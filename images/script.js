@@ -100,14 +100,14 @@ License: MIT License
             scrollSpeed: 500
         })
         // 제목 클릭 시 목차로 이동
-        $(".contents_style h2, .contents_style h3").click(function () {
+        $(".contents_style h2, .contents_style h3, .contents_style h4").click(function () {
             $('html, body').animate({
                 scrollTop: $("#toc").offset().top -100
-            }, 500);
+            }, 100);
         }).css('cursor', 'pointer');
 
         // 문단 공백 제거 클래스 제거
-        //$(".entry-content div").removeClass("tt_article_useless_p_margin");
+        $(".entry-content div").removeClass("tt_article_useless_p_margin");
 
         // 주석 제거
         $('*').contents().each(function () {
