@@ -71,8 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Fonts -->
 <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/>
 <!-- MDB -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" integrity="sha512-lw5ajyfDUd46e6Q5BVluGngRMWovYcl4LZqVMegyLA9i6wryScop6NdBSIsfFtU9jpAz5AOuGuTwYvYp+wUKjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js" integrity="sha512-kZKnID21//xaFiEISBXk6V1AdFCPOIpHhuEdBMprlAHdb0ICnvgSLsb89DAixlLJDuPyvNR+hN3lPvsFNn5XLg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"  rel="stylesheet"/>
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Performance -->
@@ -171,7 +170,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="/tag" class="nav-link link-body-emphasis"><i class="fa-solid fa-tag"></i> 태그</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle link-body-emphasis" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false">즐겨찾기</a>
+                            <a class="nav-link dropdown-toggle link-body-emphasis" href="#" role="button"
+                            data-mdb-toggle="dropdown"
+                            data-mdb-dropdown-init
+                            data-mdb-ripple-init
+                            aria-expanded="false">즐겨찾기</a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://simulz.kr/wiki/" class="nav-link link-body-emphasis"><i class="fa-solid fa-book-atlas"></i> Wiki</a></li>
                             </ul>
@@ -891,98 +894,121 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </s_article_related>
     
                     <div class="comments">
-                        <h2>댓글<span class="count"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></h2>
-                        <s_rp>
-                        <s_rp_container>
-                        <div class="comment-list">
-                            <ul>
-                                <s_rp_rep>
-                                <li id='[##_rp_rep_id_##]'>
-                                    <div class="author-meta">
-                                        <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
-                                        <span class="nickname">[##_rp_rep_name_##]</span>
-                                        <span class="date">[##_rp_rep_date_##]</span>
-                                        <span class="control">
-                                            <button type="button">더보기</button>
-                                            <div class="link">
-                                                <a href="[##_rp_rep_link_##]">댓글주소</a>
-                                                <a href="#"
-                                                    onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
-                                            </div>
-                                        </span>
-                                    </div>
-                                    <p>[##_rp_rep_desc_##]<br>
-                                        <a href="#" onclick="[##_rp_rep_onclick_reply_##]"
-                                            class="reply">답글</a></p>
-                                    <s_rp2_container>
-                                    <ul>
-                                        <s_rp2_rep>
-                                        <li>
-                                            <div class="author-meta">
-                                                <img src="[##_rp_rep_logo_##]"
-                                                    class="avatar" alt="">
-                                                <span
-                                                    class="nickname">[##_rp_rep_name_##]</span>
-                                                <span
-                                                    class="date">[##_rp_rep_date_##]</span>
-                                                <span class="control">
-                                                    <button type="button">더보기</button>
-                                                    <div class="link">
-                                                        <a
-                                                            href="[##_rp_rep_link_##]">댓글주소</a>
-                                                        <a href="#"
-                                                            onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                        <div class="container my-5 py-5">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body p-4">
+                                            <h4 class="text-center mb-4 pb-2">댓글<span class="count"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></h4>
+                                            <s_rp>
+                                            <s_rp_container>
+                                            <div class="row">
+                                                <div class="col">
+
+                                                    <s_rp_rep>
+                                                    <div class="d-flex flex-start mb-4" id="[##_rp_rep_id_##]">
+                                                        <img class="me-3"
+                                                            src="[##_rp_rep_logo_##]" alt="avatar" width="40"
+                                                            height="40" />
+                                                        <div class="flex-grow-1 flex-shrink-1">
+                                                            <div class="[##_rp_rep_class_##]">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <p class="mb-1">
+                                                                        [##_rp_rep_name_##] <span class="small">[##_rp_rep_date_##]</span>
+                                                                    </p>
+                                                                    <div class="btn-group btn-group" role="group">
+                                                                        <a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="btn btn-outline-primary" data-mdb-ripple-init>답글</a>
+                                                                        <a class="btn btn-outline-primary" href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="small mb-0">[##_rp_rep_desc_##]</p>
+                                                            </div>
+                                        
+                                                            <s_rp2_container>
+                                                            <s_rp2_rep>
+                                                            <div class="d-flex flex-start mt-4">
+                                                                <img class="me-3"
+                                                                    src="[##_rp_rep_logo_##]" alt="avatar"
+                                                                    width="40" height="40" />
+                                                                <div class="flex-grow-1 flex-shrink-1">
+                                                                    <div id="[##_rp_rep_id_##]" class="[##_rp_rep_class_##]">
+                                                                        <div class="d-flex justify-content-between align-items-center">
+                                                                            <p class="mb-1">
+                                                                                [##_rp_rep_name_##] <span class="small">[##_rp_rep_date_##]</span>
+                                                                            </p>
+                                                                            <div class="btn-group btn-group" role="group">
+                                                                                <a href="#" class="btn btn-outline-primary" data-mdb-ripple-init onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="small mb-0">[##_rp_rep_desc_##]</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </s_rp2_rep>
+                                                            </s_rp2_container>
+
+                                                        </div>
                                                     </div>
-                                                </span>
+                                                    </s_rp_rep>
+
+                                                </div>
                                             </div>
-                                            <p>[##_rp_rep_desc_##]</p>
-                                        </li>
-                                        </s_rp2_rep>
-                                    </ul>
-                                    </s_rp2_container>
-                                </li>
-                                </s_rp_rep>
-                            </ul>
-                        </div>
-                        </s_rp_container>
-    
-                        <s_rp_input_form>
-                        <div class="comment-form">
-                            <s_rp_member>
-                            <div class="field">
-                                <s_rp_guest>
-                                <input type="text" name="[##_rp_input_name_##]" class="form-control"
-                                        placeholder="이름" value="[##_guest_name_##]">
-                                    <input type="password" name="[##_rp_input_password_##]" class="form-control"
-                                        maxlength="8" placeholder="비밀번호"
-                                        value="[##_rp_admin_check_##]">
-                                </s_rp_guest>
-                                <div class="secret">
-                                    <input type="checkbox" name="[##_rp_input_is_secret_##]"
-                                        id="secret" class="form-control">
-                                    <label class="form-label" for="secret" tabindex="0">비밀글</label>
+                                            </s_rp_container>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <s_rp_input_form>
+                                                        <div class="comment-form">
+                                                            <s_rp_member>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <s_rp_guest>
+                                                                <div class="form-outline col" data-mdb-input-init>
+                                                                    <input type="text" id="[##_rp_input_name_##]" name="[##_rp_input_name_##]" class="form-control" value="[##_guest_name_##]"/>
+                                                                    <label class="form-label" for="[##_rp_input_name_##]">이름</label>
+                                                                </div>
+                                                                <div class="form-outline col mx-3" data-mdb-input-init>
+                                                                    <input type="password" id="[##_rp_input_password_##]" name="[##_rp_input_password_##]" class="form-control"
+                                                                    data-mdb-showcounter="true" maxlength="8"
+                                                                        value="[##_rp_admin_check_##]">
+                                                                    <label class="form-label" for="[##_rp_input_password_##]">암호</label>
+                                                                    <div class="form-helper"></div>
+                                                                </div>
+                                                                </s_rp_guest>
+                                                                <div class="form-check col">
+                                                                    <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret" class="form-check-input"/>
+                                                                    <label class="form-check-label" for="secret" tabindex="0">비밀글</label>
+                                                                </div>
+                                                            </div>
+                                                            </s_rp_member>
+                                                            <div class="form-outline w-100 shadow" data-mdb-input-init>
+                                                                <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="form-control"
+                                                                     rows="4"></textarea>
+                                                                <label class="form-label" for="[##_rp_input_comment_##]" class="screen_out">여러분의 소중한 댓글을 입력해주세요.</label>
+                                                            </div>
+                                                            <div class="float-end align-items-center">
+                                                                <!-- 디스플레이 고정 300*50 -->
+                                                                <ins class="adsbygoogle"
+                                                                style="display:inline-block;width:300px;height:50px"
+                                                                data-ad-client="ca-pub-7938029191014931"
+                                                                data-ad-slot="4843503264"></ins>
+                                                                <script>
+                                                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                                                </script>
+                                                                
+                                                                <button type="submit" class="btn btn-primary " data-mdb-ripple-init
+                                                                    onclick="[##_rp_onclick_submit_##]">등록</button>
+                                                            </div>
+                                                        </div>
+                                                    </s_rp_input_form>
+                                
+                                                </div>
+                                            </div>
+                                            </s_rp>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </s_rp_member>
-                            <label class="form-label" for="[##_rp_input_comment_##]" class="screen_out">댓글</label>
-                            <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="form-control"
-                                cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
-                            <div class="submit align-items-center">
-                                <!-- 디스플레이 고정 300*50 -->
-                                <ins class="adsbygoogle"
-                                style="display:inline-block;width:300px;height:50px"
-                                data-ad-client="ca-pub-7938029191014931"
-                                data-ad-slot="4843503264"></ins>
-                                <script>
-                                (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                                
-                                <button type="submit" class="btn btn-primary " data-mdb-ripple-init
-                                    onclick="[##_rp_onclick_submit_##]">등록</button>
-                            </div>
                         </div>
-                    </s_rp_input_form>
-                        </s_rp>
                     </div>
                 </section>
                 </s_permalink_article_rep>
@@ -1021,142 +1047,131 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <s_guest>
             <!--T3 방명록 시작 -->
             <section id="guest">
+
                 <div class="permalink_article text-center">
                     <h1 class="article-title">방명록</h1>
                 </div>
 
-                <s_guest_input_form>
-                <div class="flex-fill mb-4 mb-lg-0">
-                    <s_guest_member><!-- 낫 로그인 | 외부인 -->
-                    <s_guest_form><!-- 낫 로그인 -->
-                    <div class="mb-1">
-                        <label for="guest_input_name" class="form-label">*이름</label>
-                        <input
-                            type="text"
-                            id="guest_input_name"
-                            name="[##_guest_input_name_##]"
-                            value="[##_guest_name_##]"
-                            class="form-control"
-                            aria-describedby="nameHelp"
-                            placeholder="이름">
-                    </div>
-                    <div class="mb-1">
-                       <label for="guest_input_password" class="form-label">*암호</label>
-                       <input
-                            type="password"
-                            id="guest_input_password"
-                            maxlength="8"
-                            name="[##_guest_input_password_##]"
-                            value="[##_guest_password_##]"
-                            class="form-control"
-                            aria-describedby="passwordHelp"
-                            placeholder="암호">
-                    </div>
-                    </s_guest_form>
-                    <div class="mb-1">
-                        <input type="checkbox" id="guest_secret" name="secret" class="form-check-input">
-                        <label class="form-check-label" for="guest_secret">비밀글모드</label>
-                    </div>
-                    </s_guest_member>
-                    <div class="mb-1">
-                        <textarea
-                            name="[##_guest_textarea_body_##]"
-                            cols="50"
-                            rows="6"
-                            class="form-control"
-                            placeholder="내용을 입력하세요."></textarea>
-                    </div>
-
-                    <s_if_var_adss-articletop-visible>
-                    <div class="adss-section-horizontal">
-                        <ins class="adsbygoogle"
-                            style="display:inline-block;width:728px;height:90px"
-                            data-ad-client="[##_var_google-adss-client_##]"
-                            data-ad-slot="[##_var_adss-articletop-slot_##]"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                    </s_if_var_adss-articletop-visible>
-
-                    <div class="mb-4">
-                        <input
-                            class="btn btn-primary btn-block mb-4"
-                            type="submit"
-                            value="등록"
-                            onclick="[##_guest_onclick_submit_##]"/>
-                    </div>
-                    <div class="my-1"></div>
-                </div>
-                </s_guest_input_form>
-                <hr class="hr"/>
-                <s_guest_container>
-                <div class="guestList">
-                    <ol>
-                        <s_guest_rep>
-                        <li id="[##_guest_rep_id_##]">
-                            <div class="tt-rewrite-window">
-                                <div class="[##_guest_rep_class_##]">
-                                    <div class="tt-rewrite-window-top">
-                                        <div class="tt-rewrite-info">
-                                            <span class="name">[##_guest_rep_name_##]</span>
-                                            <span class="date">
-                                                [##_guest_rep_date_##]</span>
-                                        </div>
-                                    </div>
-                                    <p>[##_guest_rep_desc_##]</p>
-                                    <div class="re-control">
-                                        <div class="re-btn">
-                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">
-                                                <span>수정/삭제</span>
-                                            </a>
-                                            <a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write">
-                                                <span>답글쓰기</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <s_guest_reply_container>
-                                <ul>
-                                    <s_guest_reply_rep>
-                                        <li id="[##_guest_rep_id_##]">
-                                            <div class="tt-rewrite-window tt-rewrite-window2">
-                                                <div class="tt-div-re-icon">
-                                                    <i class="fas fa-reply fa-rotate-180"></i>
-                                                </div>
-                                                <div class="[##_guest_rep_class_##]">
-                                                    <div class="tt-rewrite-info">
-                                                        <span class="name">[##_guest_rep_name_##]</span>
-                                                        <span class="date">
-                                                            [##_guest_rep_date_##]</span>
+                <div class="container my-0 py-0">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <s_guest_input_form>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="guest-form">
+                                                <s_guest_member><!-- 낫 로그인 | 외부인 -->
+                                                <div class="d-flex justify-content-between mb-3">
+                                                    <s_guest_form><!-- 낫 로그인 -->
+                                                    <div class="form-outline col" data-mdb-input-init>
+                                                        <input type="text" id="[##_guest_input_name_##]" name="[##_guest_input_name_##]" class="form-control" value="[##_guest_name_##]"/>
+                                                        <label class="form-label" for="[##_guest_input_name_##]">이름</label>
                                                     </div>
-                                                    <p>[##_guest_rep_desc_##]</p>
-                                                    <span class="re-control">
-                                                        <div class="re-btn">
-                                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]">
-                                                                <span>수정/삭제</span>
-                                                            </a>
-                                                        </div>
-                                                    </span>
+                                                    <div class="form-outline col mx-3" data-mdb-input-init>
+                                                        <input type="password" id="[##_guest_input_password_##]" name="[##_guest_input_password_##]" class="form-control"
+                                                        data-mdb-showcounter="true" maxlength="8"
+                                                            value="[##_rp_admin_check_##]">
+                                                        <label class="form-label" for="[##_guest_input_password_##]">암호</label>
+                                                        <div class="form-helper"></div>
+                                                    </div>
+                                                    </s_guest_form>
+                                                    <div class="form-check col">
+                                                        <input type="checkbox" name="secret" id="guest_secret" class="form-check-input"/>
+                                                        <label class="form-check-label" for="guest_secret" tabindex="0">비밀글</label>
+                                                    </div>
+                                                </div>
+                                                </s_guest_member>
+                                                <div class="form-outline w-100 shadow mb-2" data-mdb-input-init>
+                                                    <textarea id="[##_guest_textarea_body_##]" name="[##_guest_textarea_body_##]" class="form-control"
+                                                            rows="4" placeholder="내용을 입력하세요."></textarea>
+                                                    <label class="form-label" for="[##_guest_textarea_body_##]" class="screen_out">내용</label>
+                                                </div>
+                                                <div class="float-end align-items-center">
+                                                    <!-- 디스플레이 고정 300*50 -->
+                                                    <ins class="adsbygoogle"
+                                                    style="display:inline-block;width:300px;height:50px"
+                                                    data-ad-client="ca-pub-7938029191014931"
+                                                    data-ad-slot="4843503264"></ins>
+                                                    <script>
+                                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                                    </script>
+                                                    
+                                                    <button type="submit" class="btn btn-primary " data-mdb-ripple-init
+                                                        onclick="[##_guest_onclick_submit_##]">등록</button>
                                                 </div>
                                             </div>
-                                        </li>
-                                    </s_guest_reply_rep>
-                                </ul>
-                            </s_guest_reply_container>
-                        </li>
-                        </s_guest_rep>
-                    </ol>
+                                        </div>
+                                    </div>
+                                    </s_guest_input_form>
+
+                                    <hr class="hr"/>
+
+                                    <s_guest_container>
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <s_guest_rep>
+                                            <div class="d-flex flex-start mb-4" id="[##_guest_rep_id_##]">
+                                                <img class="me-3"
+                                                    src="[##_rp_rep_logo_##]" alt="avatar" width="40"
+                                                    height="40" />
+                                                <div class="flex-grow-1 flex-shrink-1">
+                                                    <div class="[##_guest_rep_class_##]">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-1">
+                                                                [##_guest_rep_name_##] <span class="small">[##_guest_rep_date_##]</span>
+                                                            </p>
+                                                            <div class="btn-group btn-group" role="group">
+                                                                <a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="btn btn-outline-primary" data-mdb-ripple-init>답글</a>
+                                                                <a class="btn btn-outline-primary" href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="small mb-0">[##_guest_rep_desc_##]</p>
+                                                    </div>
+                                
+                                                    <s_guest_reply_container>
+                                                    <s_guest_reply_rep>
+                                                    <div class="d-flex flex-start mt-4">
+                                                        <img class="me-3"
+                                                            src="[##_rp_rep_logo_##]" alt="avatar"
+                                                            width="40" height="40" />
+                                                        <div class="flex-grow-1 flex-shrink-1">
+                                                            <div id="[##_guest_rep_id_##]" class="[##_guest_rep_class_##]">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <p class="mb-1">
+                                                                        [##_guest_rep_name_##] <span class="small">[##_guest_rep_date_##]</span>
+                                                                    </p>
+                                                                    <div class="btn-group btn-group" role="group">
+                                                                        <a href="#" class="btn btn-outline-primary" data-mdb-ripple-init onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="small mb-0">[##_guest_rep_desc_##]</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </s_guest_reply_rep>
+                                                    </s_guest_reply_container>
+
+                                                </div>
+                                            </div>
+                                            </s_guest_rep>
+
+                                        </div>
+                                    </div>
+                                    </s_guest_container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </s_guest_container>
             </section>
             <!--T3 방명록 끝 -->
             </s_guest>
 
             <s_paging>
             <!--T3 페이징 시작 -->
-            <section class="pagination">
+            <section class="pagination d-flex justify-content-center">
                 <a [##_prev_page_##] class="prev [##_no_more_prev_##]" aria-label="이전 페이지"><i class="fa-regular fa-circle-left"></i></a>
                 <s_paging_rep>
                     <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
@@ -1429,6 +1444,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 </s_t3>
 
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"
+></script>
 <script src="./images/script.min.js"></script>
 <s_if_var_prognroll-enabled>
 <script>

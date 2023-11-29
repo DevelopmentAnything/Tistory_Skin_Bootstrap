@@ -1,6 +1,6 @@
 /*
 
-© Simulz. 2004-2024.
+© Simulz. 2006-2024.
 License: MIT License
 
 ! 라이선스 변경 금지, 수정, 복제, 배포 자유 !
