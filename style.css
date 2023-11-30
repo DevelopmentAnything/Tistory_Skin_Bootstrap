@@ -24,7 +24,7 @@ a {
     text-decoration: none;
     transition: background-size 0.5s;
 }
-a:hover {
+a:hover:not(.btn) {
     text-shadow: 0 0 5px var(--mouse-hover-color);
     --underline-width: 100%;
 }
@@ -553,6 +553,16 @@ article .protected_form .btn {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+#aside #category .tt_category > li > a::before{
+    font-family: "FontAwesome";
+    content: "\f138";
+    margin-right: 5px;
+}
+#aside #category .category_list > li > a::before {
+    font-family: "FontAwesome";
+    content: "\f101";
+    margin-right: 5px;
+}
 
 /* 카운터 */
 #aside .count li {
@@ -563,6 +573,11 @@ article .protected_form .btn {
     color: #555;
     font-size: 1.875em;
     font-weight: 700;
+}
+#aside .count-graph h3::before{
+    font-family: "FontAwesome";
+    content: "\f201 ";
+    margin-right: 5px;
 }
 
 /* 달력 */
@@ -1422,6 +1437,52 @@ code {
 }
 /* 자동 목차 스타일 끝 */
 
+/** 사이드 도구모음 시작 **/
+#float-sideTool {
+    transform-origin: bottom right;
+    position: fixed;
+    z-index: 65535;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+}
+/* 축소 */
+#float-sideTool div {
+    transform: scale(0.5, 1);
+    -webkit-transform: scale(0.5, 1);
+    opacity: var(--float-sideTool-opacity);
+}
+#float-sideTool a:hover {
+    background-color: var(--mouse-hover-color);
+}
+#float-sideTool :is(.isset-toc, .isset-comments) {
+    display: none;
+}
+
+/* 여백 있으면 툴팁 표시 */
+@media (min-width: 1200px) {
+    #float-sideTool {
+    }
+    #float-sideTool div {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+    }
+    #float-sideTool div:hover a::before {
+        content: attr(data-text);
+    }
+    #float-sideTool div:hover a i {
+        display: none;
+    }
+}
+/* 사이드 메뉴 끝 */
+
+/**/
+@media (max-width: 1000px){
+    .auto-prose-wrapper{
+        display: none;
+    }
+}
 /* 브레드크럼 */
 
 /* 브레드크럼 끝 */

@@ -87,7 +87,6 @@ License: MIT License
         if ($(".entry-content #toc").length == 0) {
             if ($(".contents_style h2").length >= 1 || $(".contents_style h3").length >= 1 || $(".contents_style h4").length >= 1) {
                 $('.entry-content').prepend(table + "<br/>"); // before, after, prepend, append
-                $(".isset-toc").show();
             }
         }
         // 목차 정의
@@ -116,14 +115,23 @@ License: MIT License
             }
         });
 
+        // 사이드 도구모음
         // TOP 버튼
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 200) {
-                $('#float-sideTool').fadeIn();
-            } else {
-                $('#float-sideTool').fadeOut();
-            }
-        });
+        // $(window).scroll(function () {
+        //     if ($(this).scrollTop() > 200) {
+        //         $('#float-sideTool').fadeIn();
+        //     } else {
+        //         $('#float-sideTool').fadeOut();
+        //     }
+        // });
+        // 목차 버튼
+        if ($(".entry-content #toc").length > 0) {
+            $(".isset-toc").show();
+        }
+        // 댓글 버튼
+        if ($("#comments").length > 0) {
+            $(".isset-comments").show();
+        }
 
         // 알츠하이머
         copyWithSource = function (event) {
