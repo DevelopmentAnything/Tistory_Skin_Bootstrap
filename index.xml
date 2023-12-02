@@ -433,6 +433,74 @@
                 <default>layout-aside-right</default>
             </variable>
         </variablegroup>
+
+        <variablegroup name="즐겨찾기">
+            <variable>
+                <name>favorite-link-1-title</name>
+                <label><![CDATA[ 즐겨찾기1 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>favorite-link-1-url</name>
+                <label><![CDATA[ 즐겨찾기1 주소 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>favorite-link-2-title</name>
+                <label><![CDATA[ 즐겨찾기2 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>favorite-link-2-url</name>
+                <label><![CDATA[ 즐겨찾기2 주소 ]]></label>
+                <type>STRING</type>
+                <option />
+                <default></default>
+                <description><![CDATA[]]></description>
+            </variable>
+            <variable>
+                <name>favorite-link-3-title</name>
+                <label><![CDATA[ 즐겨찾기3 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>favorite-link-3-url</name>
+                <label><![CDATA[ 즐겨찾기3 주소 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>favorite-link-4-title</name>
+                <label><![CDATA[ 즐겨찾기4 이름 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+            <variable>
+                <name>favorite-link-4-url</name>
+                <label><![CDATA[ 즐겨찾기4 주소 ]]></label>
+                <description><![CDATA[]]></description>
+                <type>STRING</type>
+                <option />
+                <default></default>
+            </variable>
+        </variablegroup>
+
         <variablegroup name="푸터">
             <variable>
                 <name>order-link-1-title</name>

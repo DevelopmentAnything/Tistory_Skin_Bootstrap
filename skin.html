@@ -166,6 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <!--[##_taglog_link_##]-->
                             <a href="/tag" class="nav-link link-body-emphasis"><i class="fa-solid fa-tag"></i> 태그</a>
                         </li>
+                        <s_if_var_order-link-1-title>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle link-body-emphasis" href="#" role="button"
                             data-mdb-toggle="dropdown"
@@ -173,9 +174,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             data-mdb-ripple-init
                             aria-expanded="false">즐겨찾기</a>
                             <ul class="dropdown-menu">
-                                <li><a href="http://simulz.kr/wiki/" class="nav-link link-body-emphasis"><i class="fa-solid fa-book-atlas"></i> Wiki</a></li>
+                                <s_if_var_order-link-1-title>
+                                <li><a href="[##_var_favorite-link-1-url_##]" class="nav-link link-body-emphasis">[##_var_favorite-link-1-title_##]</a></li>
+                                </s_if_var_order-link-1-title>
+                                <s_if_var_order-link-2-title>
+                                <li><a href="[##_var_favorite-link-2-url_##]" class="nav-link link-body-emphasis">[##_var_favorite-link-2-title_##]</a></li>
+                                </s_if_var_order-link-2-title>
+                                <s_if_var_order-link-3-title>
+                                <li><a href="[##_var_favorite-link-3-url_##]" class="nav-link link-body-emphasis">[##_var_favorite-link-3-title_##]</a></li>
+                                </s_if_var_order-link-3-title>
+                                <s_if_var_order-link-4-title>
+                                <li><a href="[##_var_favorite-link-4-url_##]" class="nav-link link-body-emphasis">[##_var_favorite-link-4-title_##]</a></li>
+                                </s_if_var_order-link-4-title>
                             </ul>
                         </li>
+                        </s_if_var_order-link-1-title>
                     </ul>
                 </div>
                 <div class="navbar-nav ms-auto" role="search">
@@ -852,9 +865,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </article>
     
                     <s_tag_label>
-                        <div class="tags">
+                        <div class="tags mb-4 align-items-center">
                             <i class="fa-solid fa-tags"></i>
-                            <!-- <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">Info</button> -->
                             [##_tag_label_rep_##]
                         </div>
                     </s_tag_label>
@@ -890,6 +902,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </s_if_var_adss-multiplex-visible>
                     </s_article_related>
     
+                    <s_rp>
                     <div id="comments" class="comments">
                         <div class="container my-5 py-5">
                             <div class="row d-flex justify-content-center">
@@ -897,11 +910,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="">
                                         <div class="card-body p-0">
                                             <h4 class="text-start mb-4 pb-2">댓글 <span class="badge rounded-pill badge-notification bg-danger ms-1"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span></h4>
-                                            <s_rp>
                                             <s_rp_container>
                                             <div class="row">
                                                 <div class="col">
-
                                                     <s_rp_rep>
                                                     <div class="d-flex flex-start mb-4" id="[##_rp_rep_id_##]">
                                                         <img class="me-3"
@@ -943,71 +954,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             </div>
                                                             </s_rp2_rep>
                                                             </s_rp2_container>
-
                                                         </div>
                                                     </div>
                                                     </s_rp_rep>
-
                                                 </div>
                                             </div>
                                             </s_rp_container>
 
+                                            <s_rp_input_form>
                                             <div class="row">
                                                 <div class="col">
-                                                    <s_rp_input_form>
-                                                        <div class="comment-form">
-                                                            <s_rp_member>
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <s_rp_guest>
-                                                                <div class="form-outline col" data-mdb-input-init>
-                                                                    <input type="text" id="[##_rp_input_name_##]" name="[##_rp_input_name_##]" class="form-control" value="[##_guest_name_##]"/>
-                                                                    <label class="form-label" for="[##_rp_input_name_##]">이름</label>
-                                                                </div>
-                                                                <div class="form-outline col mx-3" data-mdb-input-init>
-                                                                    <input type="password" id="[##_rp_input_password_##]" name="[##_rp_input_password_##]" class="form-control"
-                                                                    data-mdb-showcounter="true" maxlength="8"
-                                                                        value="[##_rp_admin_check_##]">
-                                                                    <label class="form-label" for="[##_rp_input_password_##]">암호</label>
-                                                                    <div class="form-helper"></div>
-                                                                </div>
-                                                                </s_rp_guest>
-                                                                <div class="form-check col">
-                                                                    <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret" class="form-check-input"/>
-                                                                    <label class="form-check-label" for="secret" tabindex="0">비밀글</label>
-                                                                </div>
+                                                    <div class="comment-form">
+                                                        <s_rp_member>
+                                                        <div class="d-flex justify-content-between mb-3">
+                                                            <s_rp_guest>
+                                                            <div class="form-outline col" data-mdb-input-init>
+                                                                <input type="text" id="[##_rp_input_name_##]" name="[##_rp_input_name_##]" class="form-control" value="[##_guest_name_##]"/>
+                                                                <label class="form-label" for="[##_rp_input_name_##]">이름</label>
                                                             </div>
-                                                            </s_rp_member>
-                                                            <div class="form-outline w-100" data-mdb-input-init>
-                                                                <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="form-control"
-                                                                     rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
-                                                                <label class="form-label" for="[##_rp_input_comment_##]" class="screen_out">내용</label>
+                                                            <div class="form-outline col mx-3" data-mdb-input-init>
+                                                                <input type="password" id="[##_rp_input_password_##]" name="[##_rp_input_password_##]" class="form-control"
+                                                                data-mdb-showcounter="true" maxlength="8"
+                                                                    value="[##_rp_admin_check_##]">
+                                                                <label class="form-label" for="[##_rp_input_password_##]">암호</label>
+                                                                <div class="form-helper"></div>
                                                             </div>
-
-                                                            <div class="float-end align-items-top mt-2">
-                                                                <!-- 디스플레이 고정 300*50 -->
-                                                                <ins class="adsbygoogle"
-                                                                style="display:inline-block;width:300px;height:50px"
-                                                                data-ad-client="[##_var_google-adss-client_##]"
-                                                                data-ad-slot="4843503264"></ins>
-                                                                <script>
-                                                                (adsbygoogle = window.adsbygoogle || []).push({});
-                                                                </script>
-                                                                
-                                                                <button type="submit" class="btn btn-primary " data-mdb-ripple-init
-                                                                    onclick="[##_rp_onclick_submit_##]">등록</button>
+                                                            </s_rp_guest>
+                                                            <div class="form-check col">
+                                                                <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret" class="form-check-input"/>
+                                                                <label class="form-check-label" for="secret" tabindex="0">비밀글</label>
                                                             </div>
                                                         </div>
-                                                    </s_rp_input_form>
-                                
+                                                        </s_rp_member>
+                                                        <div class="form-outline w-100" data-mdb-input-init>
+                                                            <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="form-control"
+                                                                    rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
+                                                            <label class="form-label" for="[##_rp_input_comment_##]" class="screen_out">내용</label>
+                                                        </div>
+
+                                                        <div class="float-end align-items-top mt-2">
+                                                            <!-- 디스플레이 고정 300*50 -->
+                                                            <ins class="adsbygoogle"
+                                                            style="display:inline-block;width:300px;height:50px"
+                                                            data-ad-client="[##_var_google-adss-client_##]"
+                                                            data-ad-slot="4843503264"></ins>
+                                                            <script>
+                                                            (adsbygoogle = window.adsbygoogle || []).push({});
+                                                            </script>
+                                                            
+                                                            <button type="submit" class="btn btn-primary " data-mdb-ripple-init
+                                                                onclick="[##_rp_onclick_submit_##]">등록</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            </s_rp>
+                                            </s_rp_input_form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </s_rp>
                 </section>
                 </s_permalink_article_rep>
                 <!--T3 글 끝 -->

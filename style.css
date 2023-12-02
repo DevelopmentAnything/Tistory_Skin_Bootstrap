@@ -419,21 +419,16 @@ article .protected_form .btn {
     -webkit-box-orient: vertical;
 }
 
-/* 댓글 */
-.comments {
-}
-.comments .tt_box_namecard {
-    display: none;
+/* 네임카드 숨김 */
+#section-article .tt_box_namecard {
+    display: none !important;
 }
 
+/* 댓글 */
+
+
 /** 태그 **/
-#section-article .tags {
-    margin-bottom: 25px;
-    align-items: center;
-}
-#section-article .tags span {
-    align-items: center;
-}
+
 
 /** 공지 **/
 #global-notice div,
