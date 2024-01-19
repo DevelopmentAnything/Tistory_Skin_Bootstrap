@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="prognroll-bar"></span>
 <!-- 로딩 중 시작 -->
 <s_if_var_page-loading-visible>
-<div id="loading" class="position-absolute justify-content-center ">
+<div id="loading" class="position-absolute justify-content-center bg-transparent ">
     <div class="spinner-border text-success" role="status">
         <!-- <img class="loading-image" src="<s_if_var_page-loading-img>[##_var_page-loading-img_##]</s_if_var_page-loading-img><s_not_var_page-loading-img>./images/loading.gif</s_not_var_page-loading-img>" alt="loading"/> -->
     </div>
@@ -303,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                             </s_cover_item_thumbnail>
                             <div class="thumnailWrap display-none">
-                                <div class="thumnail" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img>);"></div>
+                                <div class="thumnail" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/article-bg-960.jpg</s_not_var_default-thumbnail-img>);"></div>
                             </div>
                             <div class="inner-over">
                                 <div class="inner-over-title">
@@ -363,7 +363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="row vstack gap-1">
                         <s_cover_item>
-                        <div class="inner" onclick="location.href='[##_cover_item_url_##]';" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                        <div class="inner" onclick="location.href='[##_cover_item_url_##]';" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/article-bg-960.jpg</s_not_var_default-thumbnail-img>);">
                             <s_cover_item_thumbnail>
                             <div class="thumnailWrap">
                                 <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
@@ -416,7 +416,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="row vstack gap-1">
                         <s_cover_item>
-                        <div class="inner" onclick="location.href='[##_cover_item_url_##]';" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                        <div class="inner" onclick="location.href='[##_cover_item_url_##]';" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/article-bg-960.jpg</s_not_var_default-thumbnail-img>);">
                             <s_cover_item_thumbnail>
                             <div class="thumnailWrap">
                                 <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
@@ -455,7 +455,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                        </s_if_var_adss-listinfeed-visible>    
+                        </s_if_var_adss-listinfeed-visible>
                     </div>
                 </div>
                 <hr class="hr" />
@@ -469,10 +469,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             [##_cover_title_##]
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap justify-content-between">
+                    <div class="d-flex flex-wrap justify-content-between ">
                         <s_cover_item>
                         <div class="inner" onclick="location.href='[##_cover_item_url_##]';">
-                            <div class="inner-top" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                            <div class="inner-top" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/article-bg-960.jpg</s_not_var_default-thumbnail-img>);">
                                 <s_cover_item_thumbnail>
                                 <div class="thumnailWrap">
                                     <div class="thumnail" style="background-image: url('[##_cover_item_thumbnail_##]');"></div>
@@ -542,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                         <s_cover_item>
                         <div class="inner rounded" onclick="location.href='[##_cover_item_url_##]';">
-                            <div class="inner-left" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/ch.gif</s_not_var_default-thumbnail-img>);">
+                            <div class="inner-left" style="background-image: url(<s_if_var_default-thumbnail-img>[##_var_default-thumbnail-img_##]</s_if_var_default-thumbnail-img><s_not_var_default-thumbnail-img>./images/article-bg-960.jpg</s_not_var_default-thumbnail-img>);">
                                 <!-- 컨텐츠 이미지가 있는 경우 -->
                                 <s_cover_item_thumbnail>
                                 <div class="thumnailWrap">
@@ -1191,7 +1191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <!--T2 컨텐트 종료 -->
         <!--T2 사이드바 시작 -->
-        <aside id="aside" class="d-none d-lg-block col-lg-3 mx-2">
+        <aside id="aside" class="d-none d-lg-block col-lg-3 mx-2 position-sticky">
             <s_sidebar>
             <div id="aside-container1">
                 <s_sidebar_element>
@@ -1374,7 +1374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <s_if_var_float-sideTools-visible>
 <!-- TOP버튼 + 글쓰기 관리자 카테고리 시작 -->
-<section id="float-sideTool">
+<section id="float-sideTool" class="position-fixed">
     <div class="btn-group-vertical m-0" role="group">
         <a href="#top" class="btn btn-primary"  data-mdb-ripple-init data-text="맨위"><i class="fa-solid fa-angles-up"></i></a>
         <!-- <a href="/manage/newpost" class="btn btn-primary" data-text="글쓰기"><i class="fa-solid fa-pencil"></i></a>

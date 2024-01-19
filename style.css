@@ -1,7 +1,7 @@
 /*
  * CSS for Tistory Skin
  * MIT License
- *
+ * Simulz.kr
  */
 
 @charset "utf-8";
@@ -457,7 +457,6 @@ article .protected_form .btn {
 /******** 사이드바 ********/
 /**** 공통 ****/
 #aside {
-    position: sticky;
     min-width: 300px;
 }
 #aside ul li {
@@ -680,6 +679,7 @@ article .protected_form .btn {
 /**제목 호버**/
 .cover-thumbnail-wide-wrap .inner:hover .inner-over .inner-over-title h1.title {
     top: 20px;
+    word-wrap: break-all;
     -webkit-line-clamp: 1;
 }
 /**제목 밑줄**/
@@ -965,7 +965,7 @@ article .protected_form .btn {
 .cover-gallery2-wrap .inner .inner-over .inner-over-title {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 10px;
     padding: 0;
     transform: translateY(-50%);
 }
@@ -1339,12 +1339,10 @@ article .protected_form .btn {
 
 /** 로딩 이미지 **/
 #loading {
-    position: absolute;
     z-index: 1818;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent;
 }
 #loading img {
     z-index: 1818;
@@ -1435,7 +1433,6 @@ code {
 /** 사이드 도구모음 시작 **/
 #float-sideTool {
     transform-origin: bottom right;
-    position: fixed;
     z-index: 65535;
     right: 0;
     bottom: 50%;
