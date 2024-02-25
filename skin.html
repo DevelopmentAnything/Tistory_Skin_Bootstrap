@@ -71,7 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Fonts -->
 <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/>
 <!-- MDB -->
-<link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"  rel="stylesheet"/>
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"  rel="stylesheet"/>
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Performance -->
@@ -91,29 +91,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Style -->
 <style>
     :root {
-        --ref-font-size: 16px; /* 기준 글꼴 크기 */
-        --point-color: <s_if_var_point-color>[##_var_point-color_##]</s_if_var_point-color>; /* 主 색상 */
-        --main-font-color: #FFF; /* 主 글꼴 색상 */
-        --sub-bg-color: #E5E5E5; /* 테두리 색상 */
+        /* 기본 설정 */
+        --ref-font-size: 16px; /* “기준 글꼴 크기”를 기준으로 각종 글꼴 크기가 상대적으로 변경됩니다. */
+        --point-color: #04BEB8; /* “主 색상”은 테마 색입니다. */
+        --header-font-color: #FFF; /* 제목 글꼴 색상 */
         --mouse-hover-color: #FF5544; /* 마우스 오버 색상 */
+
         --prognroll-height: 5px; /* 프로그레스바 높이 */
         --prognroll-bg-color: #60C5F1; /* 프로그레스바 색상 */
-        --article-link-color: #1D67B1; /* 글 링크 색상 */
-        --article-admin-color: #FF5544; /* 글 관리 링크 색상 */
-        --border-radius: 5px; /* 主 모깎기 */
-        --border-lg-radius: 10px; /* 큰 상자 모깎기 */
-        --border-sm-radius: 3px; /* 작은 상자 모깎기 */
-        --article-letter-spacing: 0; /* 글 자간 */
-        --article-first-letter-spacing: 10px; /* 글 첫 글자 들여쓰기 */
-        --global-notice-border-width: <s_if_var_global-notice-border-width>[##_var_global-notice-border-width_##]</s_if_var_global-notice-border-width>; /* 공지사항 테두리 두께 */
-        --global-notice-border-color: <s_if_var_global-notice-border-color>[##_var_global-notice-border-color_##]</s_if_var_global-notice-border-color>; /* 공지사항 테두리 색상 */
-        --global-notice-bg-color: <s_if_var_global-notice-bg-color>[##_var_global-notice-bg-color_##]</s_if_var_global-notice-bg-color>; /* 공지사항 배경 색상 */
-        --global-notice-font-size: <s_if_var_global-notice-font-size>[##_var_global-notice-font-size_##]</s_if_var_global-notice-font-size>; /* 공지사항 글꼴 크기 */
-        --global-notice-font-color: <s_if_var_global-notice-font-color>[##_var_global-notice-font-color_##]</s_if_var_global-notice-font-color>; /* 공지사항 글꼴 색상 */
-        --aside-article-line-clamp: 1; /* 사이드바 문장 줄 수*/
+
+        --article-link-color: #1D67B1; /* “글 링크 색상”은 본문 내의 링크 색상입니다. */
+        --article-admin-color: #FF5544; /* “글 관리 링크 색상”은 글을 관리(수정·삭제)하는 링크 색상입니다. */
+        --article-letter-spacing: 0; /* “글 자간”은 글자 간격을 나타냅니다. */
+        --article-first-letter-spacing: 5px; /* “글 첫 글자 들여쓰기”는 각 문단의 시작 위치를 나타냅니다. */
+
+        --border-color: #E5E5E5; /* “테두리 색상”은 각종 박스의 테두리를 나타냅니다. */
+        --border-radius: 5px; /* “기본 테두리 모깎기”는 큰 상자의 테두리에 적용됩니다. */
+        --border-lg-radius: 10px; /* “大 상자 모깎기”는 목차 상자의 테두리에 적용됩니다. */
+        --border-sm-radius: 3px; /* “小 상자 모깎기”는 Bold, 페이지 번호 등 작은 상자의 테두리에 적용됩니다. */
+
+        --aside-article-line-clamp: 1; /* “사이드바 문장 줄 수”는 사이드바의 긴 문장을 조절합니다. */
+
         --float-sideTool-rect-size: 35px; /* 사이드 도구모음 버튼 크기 */
         --float-sideTool-opacity: .75; /* 투명도 */
         --float-sideTool-transform-scale: 1; /* 크기 배율 */
+
+        /* 공지사항 설정 */
+        /* border에서 사용 가능한 값: thin, medium, thick, px, em, rem, cm, inherit, initial, revert, revert-layer, unset */
+        --global-notice-border-width: thick; /* 공지사항 테두리 두께 */
+        --global-notice-border-color: #555; /* 공지사항 테두리 색상 */
+        --global-notice-bg-color: #F54; /* 공지사항 배경 색상 */
+        --global-notice-font-color: #FFF; /* 공지사항 글꼴 색상 */
+        --global-notice-font-size: <s_if_var_global-notice-font-size>[##_var_global-notice-font-size_##]</s_if_var_global-notice-font-size>; /* 공지사항 글꼴 크기 */
    }
 </style>
 </head>
@@ -1433,7 +1442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- MDB -->
 <script
   type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
 ></script>
 <script src="./images/script.min.js"></script>
 <s_if_var_prognroll-enabled>
