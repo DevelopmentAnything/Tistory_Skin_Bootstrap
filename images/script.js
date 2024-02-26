@@ -176,22 +176,7 @@ License: MIT License
         });
 
         // Image Lazy
-        // $('.imageblock img, .imagegridblock img').Lazy({
-        //     attribute: "srcset",
-        //     //retinaAttribute: "data-density",
-        //     //removeAttribute: true,
-        //     scrollDirection: 'vertical',
-        //     thresold : 0,
-        //     effect: 'fadeIn',
-        //     effectTime: 100,
-        //     delay: 500,
-        //     placeholder : 'https://tistory2.daumcdn.net/tistory/6727682/skin/images/loading.gif',
-        //     visibleOnly: true,
-        //     onError: function(element) {
-        //         console.log('로딩 오류: ' + element.data('src'));
-        //     }
-        // });
-        $('.imageblock img, .imagegridblock img').lazyload();
+        $('.imageblock img, .imagegridblock img').addClass('lazyload');
 
     }
 
