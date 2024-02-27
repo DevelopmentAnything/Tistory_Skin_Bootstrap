@@ -64,7 +64,7 @@ s {
     text-decoration-color: red;
 }
 
-/**** 헤더 ****/
+/**** 머리 ****/
 #header {
     background-color: var(--point-color, #ccf4f9);
     transition: top 0.5s ease-in-out;
@@ -73,12 +73,12 @@ s {
     top: -200px !important;
 }
 
-/**** 푸터 ****/
+/**** 바닥 ****/
 #footer {
     background-color: var(--point-color, #ccf4f9);
 }
 
-/**** 메인 ****/
+/**** 몸통 ****/
 #main {
 }
 
@@ -532,7 +532,7 @@ article .protected_form .btn {
     -webkit-box-orient: vertical;
 }
 
-/**** 프로필 ****/
+/**** 신상 ****/
 #aside .blogInfo li:not(:first-child) {
     padding-top: 15px;
     border-top: 1px solid var(--border-color);
@@ -554,7 +554,7 @@ article .protected_form .btn {
     border-top-color: var(--border-color) !important;
 }
 
-/* 카테고리 */
+/* 분류 */
 #aside #category .category-new {
     padding: 1px 1px;
     margin-left: 5px;
@@ -579,7 +579,7 @@ article .protected_form .btn {
     margin-right: 5px;
 }
 
-/* 카운터 */
+/* 방문 계수 */
 #aside .count li {
     color: #777;
     font-size: 0.8125em;
@@ -1496,6 +1496,7 @@ code {
         display: none;
     }
 }
-/* 브레드크럼 */
 
-/* 브레드크럼 끝 */
+/* 빵가루 */
+
+/* 빵가루 끝 */
