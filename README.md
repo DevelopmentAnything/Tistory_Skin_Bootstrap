@@ -11,6 +11,8 @@
 + Bootstrp
 + jQuery
 + FontAwesome
-+ Google Font
-+ Google Tag
-+ Google Adsense
++ Google
+++ Google Font
+++ Google Tag
+++ Google Adsense
+++ Google Programmable Search Engine
