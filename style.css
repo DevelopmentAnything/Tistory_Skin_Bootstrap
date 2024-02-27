@@ -70,7 +70,7 @@ s {
     transition: top 0.5s ease-in-out;
 }
 #header.header-up {
-    top: -100px !important;
+    top: -200px !important;
 }
 
 /**** 푸터 ****/
