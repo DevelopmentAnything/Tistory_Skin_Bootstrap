@@ -288,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--T1 메인 본문 시작 -->
     <div class="row flex-nowrap justify-content-lg-evenly ">
         <!--T2 컨텐트 시작 -->
-        <div class="col-lg-8 mt-1 ms-lg-2">
+        <div class="col-lg-8 ms-lg-2">
             <!--티스토리 상단 광고-->
             [##_revenue_list_upper_##]
             <s_cover_group>
@@ -1186,7 +1186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <!--T2 컨텐트 종료 -->
         <!--T2 사이드바 시작 -->
-        <aside id="aside" class="d-none d-lg-block col-lg-3 mx-2 position-sticky">
+        <aside id="aside" class="d-none d-lg-block col-lg-3 mx-2">
             <s_sidebar>
             <div id="aside-container1">
                 <s_sidebar_element>
@@ -1226,9 +1226,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <s_sidebar_element>
                 <!-- 카테고리 -->
-                <section class="category">
-                    <h3 class=""><i class="fa-solid fa-folder-tree"></i> 카테고리</h3>
-                    [##_category_list_##]
+                <section id="category" class="category">
+                    <h3 class="btn" data-mdb-collapse-init data-mdb-ripple-init data-mdb-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory"><i class="fa-solid fa-folder-tree"></i> 카테고리</h3>
+                    <div class="collapse" id="collapseCategory">
+                        [##_category_list_##]
+                    </div>
                 </section>
                 </s_sidebar_element>
             </div>

@@ -447,9 +447,7 @@ article .protected_form .btn {
 
 /* 댓글 */
 
-
 /** 태그 **/
-
 
 /** 공지 **/
 #global-notice div,
@@ -478,7 +476,7 @@ article .protected_form .btn {
 /******** 사이드바 ********/
 /**** 공통 ****/
 #aside {
-    min-width: 300px;
+    width: 326px;
 }
 #aside ul li {
     list-style-type: none;
@@ -499,7 +497,9 @@ article .protected_form .btn {
         calc(var(--border-radius) * 2) !important;
 }
 #aside section > h3 {
+    width: 100%;
     padding: 5px;
+    text-align: left;
     color: var(--header-font-color, #fff) !important;
     font-size: 15px;
     font-weight: normal;
@@ -568,7 +568,7 @@ article .protected_form .btn {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-#aside .category .tt_category > li > a::before{
+#aside .category .tt_category > li > a::before {
     font-family: "FontAwesome";
     content: "\f138";
     margin-right: 5px;
@@ -589,7 +589,7 @@ article .protected_form .btn {
     font-size: 1.875em;
     font-weight: 700;
 }
-#aside .count-graph h3::before{
+#aside .count-graph h3::before {
     font-family: "FontAwesome";
     content: "\f201 ";
     margin-right: 5px;
@@ -607,6 +607,16 @@ article .protected_form .btn {
 }
 .tt-calendar tr :is(th:last-of-type, td:last-of-type) {
     background-color: #94d8f6;
+}
+
+/* 플러그인 모듈 */
+#aside .module {
+    text-align: center;
+}
+
+/* 스티키 */
+#aside .adss-float {
+    top: 60px;
 }
 
 /*******************************************************************/
@@ -1491,8 +1501,8 @@ code {
 /* 사이드 메뉴 끝 */
 
 /**/
-@media (max-width: 1000px){
-    .auto-prose-wrapper{
+@media (max-width: 1000px) {
+    .auto-prose-wrapper {
         display: none;
     }
 }
