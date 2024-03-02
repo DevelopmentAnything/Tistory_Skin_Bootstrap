@@ -555,25 +555,25 @@ article .protected_form .btn {
 }
 
 /* 분류 */
-#aside #category .category-new {
+#aside .category .category-new {
     padding: 1px 1px;
     margin-left: 5px;
 }
-#aside #category a {
+#aside .category a {
     position: relative;
 }
 
-#aside #category li {
+#aside .category li {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-#aside #category .tt_category > li > a::before{
+#aside .category .tt_category > li > a::before{
     font-family: "FontAwesome";
     content: "\f138";
     margin-right: 5px;
 }
-#aside #category .category_list > li > a::before {
+#aside .category .category_list > li > a::before {
     font-family: "FontAwesome";
     content: "\f101";
     margin-right: 5px;
