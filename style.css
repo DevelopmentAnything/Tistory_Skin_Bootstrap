@@ -514,6 +514,7 @@ article .protected_form .btn {
 }
 #aside section li a {
     display: block;
+    text-wrap: nowrap;
 }
 #aside section li a:hover {
     color: var(--mouse-hover-color) !important;
