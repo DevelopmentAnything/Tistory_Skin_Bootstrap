@@ -35,4 +35,9 @@ MIT License
 
 ## 기부 ##
 
+### 카카오페이 ###
+
+![image](https://github.com/DevelopmentAnything/Tistory_Skin_Bootstrap/assets/110871727/b4e6f7cf-e492-470a-abee-bdfdf7797462)
+
+### 페이팔 ###
 https://paypal.me/bongatti?country.x=KR&locale.x=ko_KR
