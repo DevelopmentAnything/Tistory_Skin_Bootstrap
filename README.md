@@ -1,14 +1,14 @@
 # Bootstrap for Tistroy Skin #
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/DevAnyKR/Tistory_Skin_Bootstrap)
-![GitHub License](https://img.shields.io/github/license/devanykr/Tistory_Skin_Bootstrap)
-![GitHub Discussions](https://img.shields.io/github/discussions/devanykr/Tistory_Skin_Bootstrap)
-![GitHub repo size](https://img.shields.io/github/repo-size/devanykr/Tistory_Skin_Bootstrap)
-![GitHub Repo stars](https://img.shields.io/github/stars/devanykr/Tistory_Skin_Bootstrap?style=plastic&label=%E2%AD%90)
+![GitHub License](https://img.shields.io/github/license/DevAnyKR/Tistory_Skin_Bootstrap)
+![GitHub Discussions](https://img.shields.io/github/discussions/DevAnyKR/Tistory_Skin_Bootstrap)
+![GitHub repo size](https://img.shields.io/github/repo-size/DevAnyKR/Tistory_Skin_Bootstrap)
+![GitHub Repo stars](https://img.shields.io/github/stars/DevAnyKR/Tistory_Skin_Bootstrap?style=plastic&label=%E2%AD%90)
 
-![GitHub Release Date](https://img.shields.io/github/release-date/devanykr/Tistory_Skin_Bootstrap)
-![GitHub Release](https://img.shields.io/github/v/release/devanykr/Tistory_Skin_Bootstrap)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/devanykr/Tistory_Skin_Bootstrap/total)
+![GitHub Release Date](https://img.shields.io/github/release-date/DevAnyKR/Tistory_Skin_Bootstrap)
+![GitHub Release](https://img.shields.io/github/v/release/DevAnyKR/Tistory_Skin_Bootstrap)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/DevAnyKR/Tistory_Skin_Bootstrap/total)
 
 ## 소개 ##
 
