@@ -1,5 +1,15 @@
 # Bootstrap for Tistroy Skin #
 
+![GitHub last commit](https://img.shields.io/github/last-commit/DevAnyKR/Tistory_Skin_Bootstrap)
+![GitHub License](https://img.shields.io/github/license/devanykr/Tistory_Skin_Bootstrap)
+![GitHub Discussions](https://img.shields.io/github/discussions/devanykr/Tistory_Skin_Bootstrap)
+![GitHub repo size](https://img.shields.io/github/repo-size/devanykr/Tistory_Skin_Bootstrap)
+![GitHub Repo stars](https://img.shields.io/github/stars/devanykr/Tistory_Skin_Bootstrap?style=plastic&label=%E2%AD%90)
+
+![GitHub Release Date](https://img.shields.io/github/release-date/devanykr/Tistory_Skin_Bootstrap)
+![GitHub Release](https://img.shields.io/github/v/release/devanykr/Tistory_Skin_Bootstrap)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/devanykr/Tistory_Skin_Bootstrap/total)
+
 ## 소개 ##
 
 티스토리 블로그에서 사용할 수 있는 스킨입니다. 웹디자인에서 많이 사용하는 BootStrap을 사용하여 스킨을 만들었습니다.
